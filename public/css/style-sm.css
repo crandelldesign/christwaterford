@@ -1,0 +1,111 @@
+/* Stylesheet for Small Width (Tablet) Devices */
+
+/* Layout */
+.wrapper {
+	position: relative;
+	height: 100%;
+	max-width:	1170px;
+	margin-left: auto;
+	margin-right: auto;
+	/*overflow:hidden;*/
+	display: table;
+	table-layout: fixed;
+}
+.sidebar {
+	/*float: left;*/
+	/*position: absolute;*/
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+	left: 0;
+}
+.page {
+	height: 100%;
+	/*overflow: hidden;*/
+	/*float: right;*/
+	/*position: absolute;*/
+	left: 200px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+/* Sidebar */
+.sidebar > ul {
+	margin: 135px 0 0 0;
+}
+.sidebar > ul > li {
+	font-size: 18px;
+}
+.mask {
+	display: none;
+}
+
+/* Header */
+.header {
+	margin-left: 0;
+}
+.header .site-title {
+	font-size: 50px;
+	line-height: 50px;
+	margin-bottom: 25px;
+}
+.header .site-subtitle {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+/* Content */
+.content {
+	-webkit-border-radius: 0px 10px 10px 0px;
+	border-radius: 0px 10px 10px 0px;
+	overflow: hidden;
+	margin-left: 0;
+	margin-right: 15px;
+	padding: 20px;
+}
+
+/* Footer */
+.footer {
+	margin-left: 0;
+}
+
+/* Calendar */
+.calendar>thead>tr>th, 
+.calendar>tbody>tr>th, 
+.calendar>tfoot>tr>th, 
+.calendar>thead>tr>td, 
+.calendar>tbody>tr>td, 
+.calendar>tfoot>tr>td {
+	padding: 8px;
+}
+.calendar>thead>tr>th {
+	padding: 8px;
+}
+.calendar td {
+	height: 80px;
+}
+.calendar td a.cal-event {
+	display: block;
+	font-size: 11px;
+	line-height: 12px;
+	margin-bottom: 5px;
+	white-space: normal;
+    text-overflow:ellipsis;
+	max-width: none;
+}
+
+/* Admin */
+.page.admin {
+	display: block;
+	max-width:	1150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.page.admin .navbar {
+	margin-top: 20px;
+}
+.page.admin .content, .page.admin .navbar {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin-right: 0;
+}
