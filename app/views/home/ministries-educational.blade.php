@@ -20,7 +20,7 @@
     </div>
   <div>
     <h3>Vacation Bible School</h3>
-    <p>Offered for children from Preschool through Fifth grades. Meets for one week in August, from 6:00pm to 8:00pm. Dates to be announced. <a href="{{url('/')/contact}}">Contact us</a> for more information.</p>
+    <p>Offered for children from Preschool through Fifth grades. Meets for one week in August, from 6:00pm to 8:00pm. Dates to be announced. <a href="{{url('/')}}/contact">Contact us</a> for more information.</p>
     </div>
   <div>
     <h3>Baptism Instructional Class</h3>
