@@ -22,7 +22,7 @@
 			    <label class="control-label error-label" for="message">Please Enter a Message.</label>
 			</div>
 		  	<div class="form-group">
-		      	<button type="submit" class="btn btn-submit pull-right" data-loading-text="Sending...">Send</button>
+		      	<button type="submit" class="btn btn-default btn-submit pull-right" data-loading-text="Sending...">Send</button>
 				<div class="clearfix"></div>
 		  	</div>
 		</form>
