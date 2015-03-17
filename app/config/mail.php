@@ -15,7 +15,7 @@ return array(
 	|
 	*/
 
-	'driver' => 'smtp',
+	'driver' => 'mailgun',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	//'from' => array('address' => 'matt@5inalldesign.com', 'name' => 'Matt Crandell'),
+	'from' => array('address' => 'postmaster@christwaterford.org', 'name' => 'Christ Lutheran Church'),
 
 	/*
 	|--------------------------------------------------------------------------
