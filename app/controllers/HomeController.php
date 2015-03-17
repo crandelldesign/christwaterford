@@ -169,8 +169,9 @@ class HomeController extends BaseController {
         );
 		Mail::send('emails.contact', $data, function($message)
 		{
-		    $message->from('postmaster@christwaterford.org', 'Christ Lutheran Church');
+		    $message->from(Input::get('email'), Input::get('name'));
 		    $message->to('revjohnneg@christwaterford.org', 'Pastor');
+		    $message->replyTo(Input::get('email'), Input::get('name'));
 		    $message->subject('You\'ve Been Contacted from Christ Lutheran Church by '.Input::get('name').'!');
 		});
 		return $data;
