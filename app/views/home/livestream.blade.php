@@ -5,6 +5,9 @@
 
 <p>See our worship services live right here! You can also view recent past services in case you missed them live.</p>
 
+<h2>Lutheran Worship 11-29-15</h2>
+<iframe src="http://livestream.com/accounts/8727672/events/4534430/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
+
 <h2>Lutheran Worship 11-22-15</h2>
 <iframe src="http://livestream.com/accounts/8727672/events/4514692/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
 
@@ -16,8 +19,5 @@
 
 <h2>Lutheran Worship 10-25-15</h2>
 <iframe src="http://livestream.com/accounts/8727672/events/4439143/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
-
-<h2>Lutheran Worship 10-18-15</h2>
-<iframe src="http://livestream.com/accounts/8727672/events/4420197/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
 
 @stop
