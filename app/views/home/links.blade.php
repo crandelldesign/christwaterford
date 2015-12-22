@@ -14,6 +14,7 @@
 <p><a href="https://www.youtube.com/watch?v=LnGLrHHugVs" target="_blank">The First Noel</a></p>
 <p><a href="https://www.youtube.com/watch?v=beGoJkJs0eY" target="_blank">An Unplugged Christmas</a></p>
 <p><a href="https://www.youtube.com/watch?v=ucicYteGGOQ" target="_blank">CLC Christmas Concert 2014</a></p>
+<p><a href="https://www.youtube.com/watch?v=ecK85qr12kA&feature=youtu.be" target="_blank">2015 Christmas Program</a></p>
 <p><a href="https://new.livestream.com/accounts/8727672" target="_blank">https://new.livestream.com/accounts/8727672</a></p>
 
 
