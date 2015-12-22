@@ -20,7 +20,7 @@
     </div>
   <div>
     <h3>Tech Team</h3>
-    <p>Operates our 24 channel Allen and Heath soundboard, our twin projector system for our video and confidence screens and operates our 3 camera/switching system for IMAG and weekly broadcast on the local access channel. Each Sunday the full service including the song text is displayed on video screens. In 2015 the video system was updated to allow us to stream our services weekly in high definition via <a href="http://livestream.com/accounts/8727672" target="_blank">Livestream.com</a>.</p>
+    <p>Operates our 24 channel Allen and Heath soundboard, our twin projector system for our video and confidence screens and operates our 3 camera/switching system for IMAG and weekly broadcast on the local cable access channels and on Livestream.com. Each Sunday the full service including the song text is displayed on video screens. In 2015 the video system was updated to allow us to stream our services weekly in high definition via <a href="http://livestream.com/accounts/8727672" target="_blank">Livestream.com</a>.</p>
     </div>
   <div>
     <h3>Special Music</h3>
