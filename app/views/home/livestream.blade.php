@@ -7,6 +7,11 @@
 	<div class="col-md-8">
 		<p>See our worship services live right here! You can also view recent past services in case you missed them live.</p>
 
+		<h2>Lutheran Worship 1-24-16</h2>
+		<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4712610/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
+		</div>
+
 		<h2>Lutheran Worship 1-17-16</h2>
 		<div class="embed-responsive embed-responsive-16by9">
 		<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4680309/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
@@ -25,11 +30,6 @@
 		<h2>Lutheran Worship 12-27-15</h2>
 		<div class="embed-responsive embed-responsive-16by9">
 			<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4607187/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
-		</div>
-
-		<h2>Lutheran Worship 12-20-15</h2>
-		<div class="embed-responsive embed-responsive-16by9">
-			<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4591453/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
 		</div>
 	</div>
 </div>
