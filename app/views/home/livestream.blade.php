@@ -7,6 +7,16 @@
 	<div class="col-md-8">
 		<p>See our worship services live right here! You can also view recent past services in case you missed them live.</p>
 
+		<h2>Richard Nelson Memorial Service</h2>
+		<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4739826/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
+		</div>
+
+		<h2>Lutheran Worship 1-31-16</h2>
+		<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4737311/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
+		</div>
+
 		<h2>Lutheran Worship 1-24-16</h2>
 		<div class="embed-responsive embed-responsive-16by9">
 		<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4712610/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
@@ -22,15 +32,6 @@
 		<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4654075/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
 		</div>
 
-		<h2>Lutheran Worship 1-3-16</h2>
-		<div class="embed-responsive embed-responsive-16by9">
-			<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4631438/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
-		</div>
-
-		<h2>Lutheran Worship 12-27-15</h2>
-		<div class="embed-responsive embed-responsive-16by9">
-			<iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4607187/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
-		</div>
 	</div>
 </div>
 

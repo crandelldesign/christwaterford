@@ -26,6 +26,7 @@ class HomeController extends BaseController {
         $events = CalendarEvent::where('starts_at','>=',date("Y-m-d H:i:s", $date))
 				->where('starts_at','<',date("Y-m-d H:i:s", $datelimit))
 				->where('is_featured','=',1)
+				->orderBy('starts_at')
 				->take(10)
 				->get();
 		$vw->events = $events;
