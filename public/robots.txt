@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: 
-Disallow: /events/admin
-
-Sitemap: http://www.christwaterford.org/sitemap.xml
+Disallow:
