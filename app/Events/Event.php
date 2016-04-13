@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace christwaterford\Events;
 
 abstract class Event
 {
