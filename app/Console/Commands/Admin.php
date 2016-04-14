@@ -61,11 +61,9 @@ class Admin extends Command
             // If the email is not found, ask questions to get information to add
             $password = $this->secret('What is the password? (Text entered will not be displayed)');
             $name = $this->ask('What is the full name?');
-            $phone = $this->ask('What is the phone number?');
             $user = new User;
             $user->name = $name;
             $user->email = $email;
-            $user->phone = $phone;
             $user->password = Hash::make($password);
             $user->is_admin = 1;
             $user->save();

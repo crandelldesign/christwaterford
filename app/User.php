@@ -36,4 +36,12 @@ class User extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    /**
+     * Get the events for the user.
+     */
+    public function events()
+    {
+        return $this->hasMany('christwaterford\CalendarEvent');
+    }
 }
