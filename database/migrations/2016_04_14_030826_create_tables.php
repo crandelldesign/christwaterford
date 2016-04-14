@@ -37,11 +37,12 @@ class CreateTables extends Migration
             $table->string('slug');
             $table->dateTime('starts_at');
             $table->dateTime('ends_at');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->boolean('is_featured');
             $table->boolean('is_has_ends_at');
             $table->boolean('is_all_day');
             $table->boolean('is_active')->default(true);
+            $table->integer('user_id');
         });
 
         Schema::create('cache', function($table) {
