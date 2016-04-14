@@ -43,6 +43,12 @@ class CreateTables extends Migration
             $table->boolean('is_all_day');
             $table->boolean('is_active')->default(true);
         });
+
+        Schema::create('cache', function($table) {
+            $table->string('key')->unique();
+            $table->text('value');
+            $table->integer('expiration');
+        });
     }
 
     /**
@@ -55,5 +61,6 @@ class CreateTables extends Migration
         Schema::drop('users');
         Schema::drop('password_resets');
         Schema::drop('calendar_events');
+        Schema::drop('cache');
     }
 }
