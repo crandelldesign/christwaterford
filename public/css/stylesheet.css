@@ -7824,4 +7824,49 @@ button.close {
 .fa-percent:before {
   content: ""; }
 
+/* Body Styles */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 87px; }
+
+.page {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.btn-blue {
+  background-color: #337ab7;
+  color: #FFF; }
+  .btn-blue:hover {
+    background-color: #3b87c8;
+    color: #FFF; }
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 87px;
+  font-size: 12px; }
+  .footer > .container-fluid {
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px; }
+  .footer p {
+    margin-bottom: 2px; }
+
+/* Color Swatches */
+.color-swatch {
+  height: 100px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 5px solid #FFF;
+  background-color: #eee; }
+
 /*# sourceMappingURL=stylesheet.css.map */

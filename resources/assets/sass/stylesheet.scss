@@ -1,3 +1,53 @@
 @import 'bootstrap';
 @import 'font-awesome';
+@import 'mixins';
 @import 'variables';
+
+/* Body Styles */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: $footer-height;
+}
+.page {
+    @include page-width();
+}
+
+// Default Styles */
+.btn-blue {
+    background-color: $blue;
+    color: #FFF;
+    &:hover {
+        background-color: lighten($blue, 5);
+        color: #FFF;
+    }
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    font-size: 12px;
+    > .container-fluid {
+        @include page-width();
+        padding: 15px;
+    }
+    p {
+        margin-bottom: 2px;
+    }
+}
+
+/* Color Swatches */
+.color-swatch {
+    height: 100px;
+    @include shadow-3();
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 5px solid #FFF;
+    background-color: #eee;
+}
