@@ -2,6 +2,7 @@
 @import 'font-awesome';
 @import 'mixins';
 @import 'variables';
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 
 /* Body Styles */
 html {
@@ -11,17 +12,55 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: $footer-height;
+    font-family: 'Open Sans', sans-serif;
+    color: $black;
 }
 .page {
     @include page-width();
+    padding: 15px;
 }
 
-// Default Styles */
+/* Header */
+
+/* Default Styles */
+h1 {
+    font-family: 'EB Garamond', serif;
+    color: $darkblue;
+    font-size: 38px;
+    @media (min-width: $screen-sm-min) {
+        font-size: 40px;
+    }
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: $darkgreenblue;
+}
+a {
+    color: $greenblue;
+    &:hover, &.hover {
+        color: $gray;
+        text-decoration: none;
+    }
+}
+.btn {
+    @include shadow-1();
+}
 .btn-blue {
-    background-color: $blue;
+    background-color: $darkblue;
     color: #FFF;
+    border: 1px solid #FFF;
     &:hover {
-        background-color: lighten($blue, 5);
+        background-color: lighten($darkblue, 5);
+        color: #FFF;
+    }
+}
+.btn-darkgreenblue {
+    background-color: $darkgreenblue;
+    color: #FFF;
+    border: 1px solid #FFF;
+    &:hover {
+        background-color: lighten($darkgreenblue, 5);
         color: #FFF;
     }
 }
@@ -33,6 +72,8 @@ body {
     width: 100%;
     height: $footer-height;
     font-size: 12px;
+    background-color: $gray;
+    color: #FFF;
     > .container-fluid {
         @include page-width();
         padding: 15px;
@@ -40,8 +81,37 @@ body {
     p {
         margin-bottom: 2px;
     }
+    a {
+        color: #FFF;
+        &:hover {
+            color: #252525;
+        }
+    }
 }
 
+/* Style Guide Header */
+.style-header {
+    background-color: $darkblue;
+    > .container-fluid {
+        @include page-width();
+        padding: 15px;
+    }
+    .logo {
+        float: left;
+        max-width: 185px;
+        margin-right: 35px;
+    }
+    h1 {
+        font-size: 60px;
+        color: #FFF;
+        font-variant: small-caps;
+        margin-top: 40px;
+        small {
+            color: #FFF;
+            display: block;
+        }
+    }
+}
 /* Color Swatches */
 .color-swatch {
     height: 100px;
@@ -49,5 +119,27 @@ body {
     margin-bottom: 15px;
     padding: 15px;
     border: 5px solid #FFF;
+    color: #FFF;
     background-color: #eee;
+    &.swatch1 {
+        background-color: $darkblue;
+    }
+    &.swatch2 {
+        background-color: $greenblue;
+    }
+    &.swatch3 {
+        background-color: $gray;
+    }
+    &.swatch4 {
+        background-color: $darkgreenblue;
+    }
+    &.swatch5 {
+        background-color: $greenblue2;
+    }
+    &.swatch6 {
+        background-color: $black;
+    }
+}
+.details {
+    color: #666;
 }
