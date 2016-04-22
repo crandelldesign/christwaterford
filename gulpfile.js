@@ -23,23 +23,46 @@ elixir(function(mix) {
             ]
         }
     );
+    // Build Admin Stylesheet
+    mix.sass(
+        'admin.scss',
+        'public/css/admin.css',
+        {
+            includePaths: [
+                'node_modules/bootstrap-sass/assets/stylesheets/',
+                'node_modules/font-awesome/scss/'
+            ]
+        }
+    );
     // Copy Bootstrap's JS
     mix.copy('node_modules/bootstrap-sass/assets/javascripts/*.js', 'resources/assets/js/bootstrap');
+    // Copy Handlebars's JS
+    mix.copy('node_modules/handlebars/dist/*.js', 'resources/assets/js/handlebars');
     // Build JS
     mix.scripts(
         [
             'jquery-2.2.1.js',
             'bootstrap/bootstrap.js',
-            'master.js'
+            'default.js'
         ],
-        'public/js/master.js'
+        'public/js/default.js'
+    );
+    // Build Admin JS
+    mix.scripts(
+        [
+            'jquery-2.2.1.js',
+            'bootstrap/bootstrap.js',
+            'adminlte/app.js',
+            'handlebars/handlebars.js'
+        ],
+        'public/js/admin.js'
     );
     // Copy Fonts
     mix.copy('node_modules/bootstrap-sass/assets/fonts', 'public/fonts/bootstrap');
     mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 
     // Create Build Numbers
-    mix.version(['css/stylesheet.css', 'js/master.js']);
+    mix.version(['css/stylesheet.css', 'css/admin.css', 'js/default.js', 'js/admin.js']);
 
     // Copy Fonts and Images for Build Numbers
     mix.copy('node_modules/bootstrap-sass/assets/fonts', 'public/build/fonts/bootstrap');

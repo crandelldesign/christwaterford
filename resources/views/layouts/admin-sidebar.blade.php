@@ -1,6 +1,3 @@
-<?php
-    $navCategories = mcriver\Category::orderBy('display_order')->get();
-?>
 <!-- Left side column. contains the sidebar -->
 <aside class="main-sidebar">
 
@@ -16,9 +13,6 @@
             <li class="treeview {{(isset($active_page)) && ($active_page == 'products')?'active':''}}">
                 <a href="#"><span>Products</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                @foreach($navCategories as $category)
-                    <li><a href="{{url('/')}}/admin/products/{{$category->id}}">{{$category->name}}</a></li>
-                @endforeach
                     <li><a href="{{url('/')}}/admin/products">Edit Product Categories</a></li>
                 </ul>
             </li>
