@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::get('/style', function () {
     return view('style');
 });
+
+Route::controllers([
+  'auth' => 'Auth\AuthController',
+  'password' => 'Auth\PasswordController',
+]);

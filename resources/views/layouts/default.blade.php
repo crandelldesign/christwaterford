@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        @include('master.templates.head')
+        @include('layouts.head')
     </head>
     <body>
         <div class="container-fluid page">
@@ -10,7 +10,7 @@
         </div>
 
         <script type="text/javascript" src="{{ elixir('js/master.js') }}"></script>
-        @include('master.templates.footer')
+        @include('layouts.footer')
         @yield('scripts')
     </body>
     
