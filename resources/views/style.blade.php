@@ -102,7 +102,7 @@
                 <p>All graphics are created by Matt Crandell of <a href="http://www.crandelldesign.com" target="_blank">Crandell Design</a>.</p>
             </div>
         </footer>
-        <script type="text/javascript" src="{{ elixir('js/master.js') }}"></script>
+        <script type="text/javascript" src="{{ elixir('js/default.js') }}"></script>
         
     </body>
     
