@@ -5765,7 +5765,7 @@ button.close {
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -8018,7 +8018,9 @@ a {
   .style-header h1 {
     color: #FFF;
     font-variant: small-caps;
-    font-size: 22px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
     margin-top: 10px; }
     @media (min-width: 500px) {
       .style-header h1 {
