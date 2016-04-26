@@ -7,15 +7,14 @@
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
             <li class="header">Menu</li>
-            <!-- Optionally, you can add icons to the links -->
-            <li class="{{(isset($active_page)) && ($active_page == 'sign-ups')?'active':''}}"><a href="{{url('/')}}/admin/sign-ups"><span>Sign Ups</span></a></li>
-            <li class="{{(isset($active_page)) && ($active_page == 'equipment')?'active':''}}"><a href="{{url('/')}}/admin/equipment"><span>Equipment Totals</span></a></li>
-            <li class="treeview {{(isset($active_page)) && ($active_page == 'products')?'active':''}}">
+            <li class="{{(isset($active_page)) && ($active_page == 'add-event')?'active':''}}"><a href="{{url('/admin/events/add')}}"><span>Add an Event</span></a></li>
+            <li class="{{(isset($active_page)) && ($active_page == 'edit-event')?'active':''}}"><a href="{{url('/admin/events')}}"><span>Edit Events</span></a></li>
+            <!--<li class="treeview {{(isset($active_page)) && ($active_page == 'products')?'active':''}}">
                 <a href="#"><span>Products</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
                     <li><a href="{{url('/')}}/admin/products">Edit Product Categories</a></li>
                 </ul>
-            </li>
+            </li>-->
         </ul><!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->

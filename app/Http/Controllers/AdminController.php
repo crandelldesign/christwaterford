@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use christwaterford\Http\Requests;
 use christwaterford\Http\Controllers\Controller;
 
+use christwaterford\CalendarEvent;
+
 class AdminController extends Controller
 {
     public function __construct()
@@ -18,6 +20,46 @@ class AdminController extends Controller
     {
         $view = view('admin.index');
         $view->active_page = 'home';
+        return $view;
+    }
+
+    public function getEvents($id = null)
+    {
+        if (!$id) {
+            return $this->listEvents();
+        } else {
+            return $this->editEvent($id);
+        }
+    }
+
+    public function postEvents(Request $request, $action = null)
+    {
+        if($request->get('add_another'))
+            echo 'Save and Add Another';
+        else
+            echo 'Save and Close';
+        print_r($request->all());
+    }
+
+    protected function listEvents()
+    {
+        $events = CalendarEvent::orderBy('starts_at', 'desc');
+        $events = $events->get();
+        $view = view('admin.events-list');
+        $view->active_page = 'edit-event';
+        $view->events = $events;
+        return $view;
+    }
+
+    protected function editEvent($id)
+    {
+        $event = CalendarEvent::find($id);
+        $view = view('admin.event');
+        $view->active_page = 'add-event';
+        if($event) {
+            $view->active_page = 'edit-event';
+            $view->event = $event;
+        }
         return $view;
     }
 
@@ -50,69 +92,4 @@ class AdminController extends Controller
         }
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }
