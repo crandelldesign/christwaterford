@@ -34,11 +34,12 @@ class AdminController extends Controller
 
     public function postEvents(Request $request, $action = null)
     {
+        print_r($request->all());
+
         if($request->get('add_another'))
             echo 'Save and Add Another';
         else
             echo 'Save and Close';
-        print_r($request->all());
     }
 
     protected function listEvents()

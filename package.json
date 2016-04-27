@@ -6,7 +6,8 @@
     "font-awesome": "^4.5.0",
     "gulp": "^3.9.1",
     "handlebars": "^4.0.5",
-    "moment": "^2.13.0"
+    "moment": "^2.13.0",
+    "summernote": "^0.8.1"
   },
   "dependencies": {
     "laravel-elixir": "^4.0.0"

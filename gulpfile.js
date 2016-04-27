@@ -40,9 +40,12 @@ elixir(function(mix) {
     // Copy Handlebars's JS
     mix.copy('node_modules/handlebars/dist/*.js', 'resources/assets/js/handlebars');
     // Copy Moment's JS
-    mix.copy('node_modules/moment/min/*.js', 'resources/assets/js/moment');
+    mix.copy('node_modules/moment/min/moment.min.js', 'resources/assets/js/moment');
     // Copy Bootstrap Datepicker's JS
     mix.copy('node_modules/eonasdan-bootstrap-datetimepicker/src/js/*.js', 'resources/assets/js/eonasdan-bootstrap-datetimepicker');
+    // Copy Summernote's CSS and JS
+    mix.copy('node_modules/summernote/dist/summernote.css', 'public/css/summernote');
+    mix.copy('node_modules/summernote/dist/summernote.js', 'resources/assets/js/summernote');
     // Build JS
     mix.scripts(
         [
@@ -61,13 +64,15 @@ elixir(function(mix) {
             'bootstrap/bootstrap.js',
             'adminlte/app.js',
             'handlebars/handlebars.js',
-            'eonasdan-bootstrap-datetimepicker/bootstrap-datetimepicker.js'
+            'eonasdan-bootstrap-datetimepicker/bootstrap-datetimepicker.js',
+            'summernote/summernote.js'
         ],
         'public/js/admin.js'
     );
     // Copy Fonts
     mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts/bootstrap');
     mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
+    mix.copy('node_modules/summernote/dist/font', 'public/css/summernote/font');
 
     // Create Build Numbers
     mix.version(['css/stylesheet.css', 'css/admin.css', 'js/default.js', 'js/admin.js']);
