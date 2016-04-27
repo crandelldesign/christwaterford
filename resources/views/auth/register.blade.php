@@ -1,4 +1,5 @@
-@extends('layouts.app')
+<!-- Disable new user registration -->
+<?php header('Location: '.url("/")); ?>
 
 @section('content')
 <div class="container">
