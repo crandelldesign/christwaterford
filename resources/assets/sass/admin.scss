@@ -220,8 +220,17 @@
 }
 
 /* General Styles */
+.margin-top-15 {
+	margin-top: 15px;
+}
 .margin-bottom-15 {
 	margin-bottom: 15px;
+}
+.box-footer {
+	.btn {
+		font-size: 16px;
+		margin-left: 2px;
+	}
 }
 
 /* Event Editing */

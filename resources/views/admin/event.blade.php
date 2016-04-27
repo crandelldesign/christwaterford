@@ -11,7 +11,24 @@
 		            	<h2 class="box-title">Event Details</h2>
 		            </div>
 		        	<div class="box-body">
-		        	
+
+		        		@if (session('success'))
+						    <div class="alert alert-success alert-dismissible fade in">
+						    	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <ul>
+						            <li>{{session('success')}}</li>
+						        </ul>
+						    </div>
+						@endif
+
+		        		@if (session('not_found'))
+						    <div class="alert alert-danger">
+						        <ul>
+						            <li>{{session('not_found')}}</li>
+						        </ul>
+						    </div>
+						@endif
+
 		        		<div class="form-group">
 					    	<label class="control-label col-sm-3">Event Name</label>
 					    	<div class="col-sm-5">
@@ -83,15 +100,15 @@
 					    <div class="form-group">
 					        <label class="control-label col-sm-3">Enter Description</label>
 					        <div class="col-sm-9">
-					            <textarea id="summernote" name="description" class="form-control" rows="5">{{old('description')?old('description'):(isset($event)?$event->description:'')}}</textarea>
+					            <textarea id="summernote" name="description" class="form-control" rows="5">{{old('description')?old('description'):(isset($event) && $event->description != 'NULL'?$event->description:'')}}</textarea>
 					        </div>
 					    </div>
 					    <input type="hidden" name="event_id" value="{{isset($event)?$event->id:0}}">
 		        		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 		        	</div>
-		        	<div class="box-footer">
-		        		<input class="btn btn-primary" type="submit" name="add_another" value="Save and Add Another">
+		        	<div class="box-footer text-right">
 						<input class="btn btn-default" type="submit" name="add_close" value="Save and Close">
+						<input class="btn btn-primary" type="submit" name="{{(isset($event))?'continue':'add_another'}}" value="{{(isset($event))?'Save and Continue':'Save and Add Another'}}">
 					</div>
 				</form>
 			</div>
@@ -100,7 +117,7 @@
 @stop
 
 @section('scripts')
-<script type="text/javascript">
+<script>
 	$(document).ready(function(){
 	  	$('#event_date_group').datetimepicker({
     		allowInputToggle: true,

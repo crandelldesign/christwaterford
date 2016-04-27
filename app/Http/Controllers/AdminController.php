@@ -36,10 +36,37 @@ class AdminController extends Controller
     {
         print_r($request->all());
 
-        if($request->get('add_another'))
-            echo 'Save and Add Another';
+        $action = '';
+        if ($request->get('event_id') == 0) {
+            $event = new CalendarEvent;
+            $success_message = 'The event, '.$request->get('event_name').', has successfully been added';
+        }
+        else {
+            $event = CalendarEvent::find($request->get('event_id'));
+            $success_message = 'The event, '.$request->get('event_name').', has successfully been updated';
+        }
+
+        if (empty($event))
+            return redirect('/admin/events/'.$request->get('event_id'))->with('not_found','There was an error saving the event. Please reload and try again.');
+
+        $starts_at = strtotime($request->get('event_date').' '.$request->get('start_time'));
+        $ends_at = strtotime($request->get('event_date').' '.$request->get('end_time'));
+        $event->name = $request->get('event_name');
+        $event->slug = $this->toAscii($request->get('event_name'));
+        $event->starts_at = date('Y-m-d H:i:s', $starts_at);
+        $event->ends_at = date('Y-m-d H:i:s', $ends_at);
+        $event->is_has_ends_at = ($request->get('is_has_ends_at'))?1:0;
+        $event->is_featured = ($request->get('is_featured'))?1:0;
+        $event->is_all_day = ($request->get('is_all_day'))?1:0;
+        $event->description = $request->get('description');
+        $event->save();
+
+        if ($request->get('add_another'))
+            return redirect('/admin/events/add')->with('success',$success_message);
+        elseif ($request->get('continue'))
+            return redirect('/admin/events')->with('success',$success_message);
         else
-            echo 'Save and Close';
+            return redirect('/admin')->with('success',$success_message);
     }
 
     protected function listEvents()
@@ -62,6 +89,17 @@ class AdminController extends Controller
             $view->event = $event;
         }
         return $view;
+    }
+
+    public function getDeleteEvent($id = null)
+    {
+        if (!$id)
+            return redirect('/admin/events');
+
+        $event = CalendarEvent::find($id);    
+        $event->delete();
+
+        return redirect('/admin/events')->with('success','Event deleted successfully.');
     }
 
     public function getChangePassword()
