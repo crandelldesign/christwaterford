@@ -6,7 +6,7 @@
     <body class="hold-transition login-page">
         <div class="login-box">
             <div class="login-logo">
-                CLC Admin
+                <a href="{{url('/admin')}}">CLC Admin</a>
             </div>
             <div class="login-box-body">
                     <form role="form" method="POST" action="{{ url('/auth/login') }}">
@@ -50,7 +50,7 @@
                         </div>
 
                         <div class="form-group">
-                            <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
+                            <a href="{{ url('/password/email') }}">Forgot Your Password?</a>
                         </div>
                     </form>
             </div>
