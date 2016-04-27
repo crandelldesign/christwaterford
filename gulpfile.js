@@ -30,7 +30,8 @@ elixir(function(mix) {
         {
             includePaths: [
                 'node_modules/bootstrap-sass/assets/stylesheets/',
-                'node_modules/font-awesome/scss/'
+                'node_modules/font-awesome/scss/',
+                'node_modules/eonasdan-bootstrap-datetimepicker/src/sass/',
             ]
         }
     );
@@ -38,6 +39,10 @@ elixir(function(mix) {
     mix.copy('node_modules/bootstrap-sass/assets/javascripts/*.js', 'resources/assets/js/bootstrap');
     // Copy Handlebars's JS
     mix.copy('node_modules/handlebars/dist/*.js', 'resources/assets/js/handlebars');
+    // Copy Moment's JS
+    mix.copy('node_modules/moment/min/*.js', 'resources/assets/js/moment');
+    // Copy Bootstrap Datepicker's JS
+    mix.copy('node_modules/eonasdan-bootstrap-datetimepicker/src/js/*.js', 'resources/assets/js/eonasdan-bootstrap-datetimepicker');
     // Build JS
     mix.scripts(
         [
@@ -52,9 +57,11 @@ elixir(function(mix) {
     mix.scripts(
         [
             'jquery-2.2.1.js',
+            'moment/moment.min.js',
             'bootstrap/bootstrap.js',
             'adminlte/app.js',
-            'handlebars/handlebars.js'
+            'handlebars/handlebars.js',
+            'eonasdan-bootstrap-datetimepicker/bootstrap-datetimepicker.js'
         ],
         'public/js/admin.js'
     );

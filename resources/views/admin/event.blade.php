@@ -101,3 +101,32 @@
 		</div>
 	</div>
 @stop
+
+@section('scripts')
+<script type="text/javascript">
+	$(function () {
+        $('#event_date_group').datetimepicker();
+    });
+	$(document).ready(function(){
+		/*$(function() {
+	    	$('#event_date_group').datetimepicker({
+	    		//locale: 'en',
+	      		//pick12HourFormat: true,
+	      		//pickTime: false
+	    	});
+	  	});*/
+	  	
+	    $(function () {
+	        $('#start_time_group').datetimepicker({
+	            //pickDate: false
+	            format: 'LT'
+	        });
+	    });
+	    $(function () {
+	        $('#end_time_group').datetimepicker({
+	            //pickDate: false
+	        });
+	    });
+	});
+</script>
+@stop
