@@ -13,8 +13,8 @@
     <body>
         <header class="style-header">
             <div class="container-fluid">
-                <img src="{{url('/')}}/img/clc-logo.svg" alt="Christ Lutheran Church of Waterford" class="logo img-responsive">
-                <h1>Christ Lutheran Church <small>of Waterford</small></h1>
+                <img src="{{url('/')}}/img/christwaterford-logo.svg" alt="Christ Lutheran Church of Waterford" class="logo img-responsive">
+                <!--<h1>Christ Lutheran Church <small>of Waterford</small></h1>-->
             </div>
         </header>
         <div class="container-fluid page">

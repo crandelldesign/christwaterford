@@ -102,15 +102,16 @@ a {
         padding: 15px;
     }
     .logo {
-        float: left;
-        max-width: 24%;
-        margin-right: 2%;
-        @media (min-width: $screen-sm-min) {
+        max-width: 850px;
+        //float: left;
+        //max-width: 24%;
+        //margin-right: 2%;
+        /*@media (min-width: $screen-sm-min) {
             max-width: 185px;
             margin-right: 35px;
-        }
+        }*/
     }
-    h1 {
+    /*h1 {
         color: #FFF;
         font-variant: small-caps;
         float: left;
@@ -133,7 +134,7 @@ a {
             color: #FFF;
             display: block;
         }
-    }
+    }*/
 }
 /* Color Swatches */
 .color-swatch {
