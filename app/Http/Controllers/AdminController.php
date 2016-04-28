@@ -131,4 +131,10 @@ class AdminController extends Controller
         }
     }
 
+    public function getPasswordReset()
+    {
+        $view = view('emails.password');
+        $view->token = '1234';
+        return $view;
+    }
 }
