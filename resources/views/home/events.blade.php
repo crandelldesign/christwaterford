@@ -38,7 +38,7 @@
                         <span class="event-title">{{$event->name}}</span>
                         @if(!$event->is_all_day)
                         <br>
-                        {{date('g:ia',strtotime($event->starts_at))}}<!-- - {{date('g:ia',strtotime($event->ends_at))}}-->
+                        {{date('g:ia',strtotime($event->starts_at))}} @if($event->is_has_ends_at) - {{date('g:ia',strtotime($event->ends_at))}} @endif
                         @endif
                     </a>
                     @endif
