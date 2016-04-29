@@ -9,7 +9,7 @@
             @yield('body')
         </div>
 
-        <script type="text/javascript" src="{{ elixir('js/master.js') }}"></script>
+        <script type="text/javascript" src="{{ elixir('js/default.js') }}"></script>
         @include('layouts.footer')
         @yield('scripts')
     </body>

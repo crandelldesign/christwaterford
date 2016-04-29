@@ -47,7 +47,7 @@ class CreateTables extends Migration
 
         Schema::create('cache', function($table) {
             $table->string('key')->unique();
-            $table->text('value');
+            $table->mediumText('value');
             $table->integer('expiration');
         });
     }
