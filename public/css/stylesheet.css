@@ -7910,42 +7910,14 @@ a {
 
 /* Style Guide Header */
 .style-header {
-  background-color: #003366;
-  /*h1 {
-        color: #FFF;
-        font-variant: small-caps;
-        float: left;
-        text-align: center;
-        font-size: 20px;
-        margin-top: 10px;
-        @media (min-width: 500px) {
-            font-size: 30px;
-            margin-top: 15px;
-        }
-        @media (min-width: $screen-sm-min) {
-            font-size: 45px;
-            margin-top: 30px;
-        }
-        @media (min-width: $screen-md-min) {
-            font-size: 60px;
-            margin-top: 40px;
-        }
-        small {
-            color: #FFF;
-            display: block;
-        }
-    }*/ }
+  background-color: #003366; }
   .style-header > .container-fluid {
     max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
     padding: 15px; }
   .style-header .logo {
-    max-width: 850px;
-    /*@media (min-width: $screen-sm-min) {
-            max-width: 185px;
-            margin-right: 35px;
-        }*/ }
+    max-width: 850px; }
 
 /* Color Swatches */
 .color-swatch {
@@ -7971,5 +7943,23 @@ a {
 
 .details {
   color: #666; }
+
+/* Events */
+.calendar-page {
+  position: relative; }
+  .calendar-page .calendar-overlay {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #FFF;
+    opacity: .50;
+    text-align: center;
+    padding: 100px; }
+    .calendar-page .calendar-overlay.loading {
+      display: block; }
 
 /*# sourceMappingURL=stylesheet.css.map */
