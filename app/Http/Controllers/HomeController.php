@@ -21,9 +21,6 @@ class HomeController extends Controller
 
     public function getEvents($month_year = null)
     {
-        $view = view('home.events');
-        $view->active_page = 'events';
-
         if ($month_year)
         {
             $url = explode('-', $month_year);
@@ -31,12 +28,16 @@ class HomeController extends Controller
         } else {
             $date = time();
         }
-
         $prev_month = strtotime('-1 month', $date);
         $next_month = strtotime('+1 month', $date);
         $today = getdate();
         $first_day_of_the_month = strtotime(date('F', $date).' 1, '.date('Y', $date));
         $last_day_of_the_month = strtotime(date('F', $date).' '.date('t', $date).', '.date('Y', $date));
+
+        $view = view('home.events');
+        $view->active_page = 'events';
+        //$view->title = date('F Y',$date).' Events';
+        $view->title = 'Events';
 
         $view->current_date = time();
         $view->date = $date;

@@ -6,8 +6,8 @@
     <div class="calendar-overlay"><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i><span class="sr-only">Loading...</span></div>
     <div class="row">
         <div class="col-xs-12 col-sm-4 col-sm-push-4 text-center"><h2><span class="calendar-month">{{date('F',$date)}}</span></h2></div>
-        <div class="col-xs-6 col-sm-4 col-sm-pull-4"><a href="{{url('/')}}/events/{{strtolower(getdate($prev_month)['month'])}}-{{date('Y',$prev_month)}}" class="last-month month-nav" data-month_link="{{strtolower(getdate($prev_month)['month'])}}-{{date('Y',$prev_month)}}">Last Month</a></div>
-        <div class="col-xs-6 col-sm-4 text-right"><a href="{{url('/')}}/events/{{strtolower(getdate($next_month)['month'])}}-{{date('Y',$next_month)}}" class="next-month month-nav" data-month_link="{{strtolower(getdate($next_month)['month'])}}-{{date('Y',$next_month)}}">Next Month</a></div>
+        <div class="col-xs-6 col-sm-4 col-sm-pull-4"><a href="{{url('/')}}/events/{{strtolower(getdate($prev_month)['month']).'-'.date('Y',$prev_month)}}" class="last-month month-nav" data-month_link="{{strtolower(getdate($prev_month)['month']).'-'.date('Y',$prev_month)}}" data-month_title="{{getdate($prev_month)['month'].' '.date('Y',$prev_month)}}">Last Month</a></div>
+        <div class="col-xs-6 col-sm-4 text-right"><a href="{{url('/')}}/events/{{strtolower(getdate($next_month)['month']).'-'.date('Y',$next_month)}}" class="next-month month-nav" data-month_link="{{strtolower(getdate($next_month)['month']).'-'.date('Y',$next_month)}}" data-month_title="{{getdate($next_month)['month'].' '.date('Y',$next_month)}}">Next Month</a></div>
     </div>
     <table class="table calendar">
         <thead>
@@ -75,19 +75,20 @@ $(document).ready(function()
     {
         event.preventDefault();
         $('.calendar-page').find('.calendar-overlay').addClass('loading');
-        console.log($(this).data('month_link'));
         var month_link = $(this).data('month_link');
-        $('.calendar-page').load('{{url("/events")}}/'+month_link+' .calendar-page > *', function(responseTxt, statusTxt, xhr){
+        var month_title = $(this).data('month_title');
+        $('.calendar-page').load('{{url("/events")}}/'+month_link+' .calendar-page > *', function(responseTxt, statusTxt, xhr)
+        {
             if(statusTxt == "success")
                 $('.calendar-page').find('.calendar-overlay').removeClass('loading');
             if(statusTxt == "error")
                 console.log("Error: " + xhr.status + ": " + xhr.statusText);
         });
         if (history.pushState) {
-            event.preventDefault();
             var stateObject = {};
-            var title = "Events | Christ Lutheran Church of Waterford";
-            var newUrl = "{{url('/events/')}}/"+month_link;
+            //var title = month_title+' Events | Christ Lutheran Church of Waterford'; // Add back when browsers use it
+            var title = 'Events | Christ Lutheran Church of Waterford';
+            var newUrl = '{{url("/events/")}}/'+month_link;
             history.pushState(stateObject,title,newUrl);
         }
     });
