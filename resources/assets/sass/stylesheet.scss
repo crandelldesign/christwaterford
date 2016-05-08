@@ -157,3 +157,15 @@ a {
         }
     }
 }
+#event-modal {
+    .event-panel {
+        .panel-heading {
+            position: relative;
+            padding-left: 30px;
+            a.see-more-left {
+                position: absolute;
+                left: 10px;
+            }
+        }
+    }
+}

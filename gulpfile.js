@@ -52,6 +52,7 @@ elixir(function(mix) {
             'jquery-2.2.1.js',
             'bootstrap/bootstrap.js',
             'handlebars/handlebars.js',
+            'moment/moment.min.js',
             'default.js'
         ],
         'public/js/default.js'

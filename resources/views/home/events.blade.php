@@ -29,7 +29,7 @@
                 <?php $i ++ ?>
             @endfor
             @foreach ($month->dates as $dates)
-                <td data-date="{{$dates->date_time}}" class="{{(isset($dates->events) && isset($dates->events[0]->name))?'has-event':''}} {{(date('mdY',$dates->php_date) == date('mdY',$current_date))?'active':''}}">
+                <td data-date="{{$dates->date_time}}" data-php_date="{{$dates->php_date}}" class="{{(isset($dates->events) && isset($dates->events[0]->name))?'has-event':''}} {{(date('mdY',$dates->php_date) == date('mdY',$current_date))?'active':''}}">
                     <strong class="day-count">{{$dates->day_count}}</strong>
                     @if(isset($dates->events))
                     @foreach ($dates->events as $event)
@@ -59,6 +59,58 @@
         </tbody>
     </table>
 </div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="event-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div id="event-template-container"></div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script id="event-template" type="x-tmpl-mustache">
+    <div class="panel-group" id="event-accordion" role="tablist" aria-multiselectable="true">
+    @{{#each data}}
+    <div class="panel panel-default event-panel">
+        <div class="panel-heading" role="tab" id="heading@{{@index}}">
+            @{{#if description}}
+            <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="see-more-left">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </a>
+            @{{/if}}
+            <h4 class="panel-title">
+                @{{name}}
+                <div class="row">
+                    <div class="col-sm-6">
+
+                    </div>
+                    <div class="col-sm-6">
+                    @{{#if description}}
+                    <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="see-more-left">
+                    <small>See More</small>
+                    </a>
+                    @{{/if}}
+                    </div>
+                </div>
+            </h4>
+        </div>
+        @{{#if description}}
+        <div id="collapse@{{@index}}" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+            @{{{description}}}
+            </div>
+        </div>
+        @{{/if}}
+    </div>
+    @{{/each}}
+    </div>
+</script>
 @stop
 
 @section('scripts')
@@ -91,6 +143,36 @@ $(document).ready(function()
             var newUrl = '{{url("/events/")}}/'+month_link;
             history.pushState(stateObject,title,newUrl);
         }
+    });
+
+    $('.calendar-page').on('click', '.has-event', function(event)
+    {
+        $('.calendar-page').find('.calendar-overlay').addClass('loading');
+        var php_date = $(this).data('php_date');
+        var date = moment($(this).data('date')).format('dddd, MMMM D, YYYY');
+        console.log(date);
+        $.ajax({
+            url: '{{url("/api/events")}}/'+php_date,
+            /*data: {
+                format: 'json'
+            },*/
+            /*error: function() {
+                $('#info').html('<p>An error has occurred</p>');
+            },*/
+            //dataType: 'jsonp',
+            success: function(data) {
+                var source = $("#event-template").html();
+                var template = Handlebars.compile(source);
+                var html = template({
+                    data: JSON.parse(data)
+                });
+                $('#event-template-container').html(html);
+                $('#event-modal').find('.modal-title').html(date);
+                $('#event-modal').modal('show');
+                $('.calendar-page').find('.calendar-overlay').removeClass('loading');
+            },
+            type: 'GET'
+        });
     });
 
 });
