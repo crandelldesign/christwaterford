@@ -80,23 +80,27 @@
     <div class="panel panel-default event-panel">
         <div class="panel-heading" role="tab" id="heading@{{@index}}">
             @{{#if description}}
-            <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="see-more-left">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="see-more-left event-see-more">
+            <i class="fa fa-chevron-right rotate" aria-hidden="true"></i>
             </a>
             @{{/if}}
             <h4 class="panel-title">
                 @{{name}}
-                <div class="row">
-                    <div class="col-sm-6">
-
+                <div class="more-info">
+                    @{{#unless is_all_day}}
+                    <div class="event-time">
+                        @{{starts_at_time_formatted}}
+                        @{{#if is_has_ends_at}}
+                        - @{{ends_at_time_formatted}}
+                        @{{/if}}
                     </div>
-                    <div class="col-sm-6">
+                    @{{/unless}}
                     @{{#if description}}
-                    <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="see-more-left">
-                    <small>See More</small>
+                    <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="event-see-more see-more-text">
+                        See More
                     </a>
                     @{{/if}}
-                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </h4>
         </div>
@@ -150,16 +154,8 @@ $(document).ready(function()
         $('.calendar-page').find('.calendar-overlay').addClass('loading');
         var php_date = $(this).data('php_date');
         var date = moment($(this).data('date')).format('dddd, MMMM D, YYYY');
-        console.log(date);
         $.ajax({
             url: '{{url("/api/events")}}/'+php_date,
-            /*data: {
-                format: 'json'
-            },*/
-            /*error: function() {
-                $('#info').html('<p>An error has occurred</p>');
-            },*/
-            //dataType: 'jsonp',
             success: function(data) {
                 var source = $("#event-template").html();
                 var template = Handlebars.compile(source);
@@ -174,7 +170,10 @@ $(document).ready(function()
             type: 'GET'
         });
     });
-
+    $('#event-modal').on('click', '.event-see-more', function(event)
+    {
+        $('#event-modal').find('.event-see-more .rotate').toggleClass('down');
+    });
 });
 </script>
 @stop

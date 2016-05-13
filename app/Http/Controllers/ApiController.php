@@ -32,6 +32,13 @@ class ApiController extends Controller
             ->orderBy('is_all_day')
             ->get();
 
+        foreach ($events as $event) {
+            $event->starts_at_date_formatted = date('n/j/Y',strtotime($event->starts_at));
+            $event->starts_at_time_formatted = date('g:ia',strtotime($event->starts_at));
+            $event->ends_at_date_formatted = date('n/j/Y',strtotime($event->ends_at));
+            $event->ends_at_time_formatted = date('g:ia',strtotime($event->ends_at));
+        }
+
         return json_encode($events);
     }
 }

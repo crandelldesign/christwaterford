@@ -8059,5 +8059,23 @@ a {
   #event-modal .event-panel .panel-heading a.see-more-left {
     position: absolute;
     left: 10px; }
+    #event-modal .event-panel .panel-heading a.see-more-left .rotate {
+      transition: all .25s linear; }
+      #event-modal .event-panel .panel-heading a.see-more-left .rotate.down {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg); }
+  #event-modal .event-panel .panel-heading .more-info {
+    font-size: 12px; }
+    #event-modal .event-panel .panel-heading .more-info .event-time, #event-modal .event-panel .panel-heading .more-info .event-see-more {
+      margin-right: 8px; }
+      @media (min-width: 768px) {
+        #event-modal .event-panel .panel-heading .more-info .event-time, #event-modal .event-panel .panel-heading .more-info .event-see-more {
+          float: left; } }
+    #event-modal .event-panel .panel-heading .more-info .event-time {
+      padding: 6px 0; }
+    #event-modal .event-panel .panel-heading .more-info .event-see-more {
+      padding: 6px 12px; }
+    #event-modal .event-panel .panel-heading .more-info > div:first-child {
+      padding-left: 0; }
 
 /*# sourceMappingURL=stylesheet.css.map */

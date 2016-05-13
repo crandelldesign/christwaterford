@@ -165,6 +165,34 @@ a {
             a.see-more-left {
                 position: absolute;
                 left: 10px;
+                .rotate {
+                    -moz-transition: all .25s linear;
+                    -webkit-transition: all .25s linear;
+                    transition: all .25s linear;
+                    &.down {
+                        -moz-transform:rotate(90deg);
+                        -webkit-transform:rotate(90deg);
+                        transform:rotate(90deg);
+                    }
+                }
+            }
+            .more-info {
+                font-size: 12px;
+                .event-time, .event-see-more {
+                    margin-right: 8px;
+                    @media (min-width: $screen-sm-min) {
+                        float: left;
+                    }
+                }
+                .event-time {
+                    padding: 6px 0;
+                }
+                .event-see-more {
+                    padding: 6px 12px;
+                }
+                > div:first-child {
+                    padding-left: 0;
+                }
             }
         }
     }
