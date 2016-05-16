@@ -64,8 +64,14 @@
                     <hr>
                     <h1>Buttons</h1>
 
-                    <button class="btn btn-lg btn-blue">This is a large button</button>
+                    <button class="btn btn-lg btn-blue">This is a large button</button>&nbsp;
+
+                    <div class="visible-xs-block margin-bottom-10"></div>
+
                     <button class="btn btn-darkgreenblue">This is another smaller button</button>
+
+                    <hr class="visible-xs-block">
+
                 </div>
                 <div class="col-sm-6">
                     <h1>Typography</h1>
