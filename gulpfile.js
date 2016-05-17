@@ -36,13 +36,13 @@ elixir(function(mix) {
         }
     );
     // Copy Bootstrap's JS
-    mix.copy('node_modules/bootstrap-sass/assets/javascripts/*.js', 'resources/assets/js/bootstrap');
+    mix.copy('node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', 'resources/assets/js/bootstrap');
     // Copy Handlebars's JS
-    mix.copy('node_modules/handlebars/dist/*.js', 'resources/assets/js/handlebars');
+    mix.copy('node_modules/handlebars/dist/handlebars.js', 'resources/assets/js/handlebars');
     // Copy Moment's JS
     mix.copy('node_modules/moment/min/moment.min.js', 'resources/assets/js/moment');
     // Copy Bootstrap Datepicker's JS
-    mix.copy('node_modules/eonasdan-bootstrap-datetimepicker/src/js/*.js', 'resources/assets/js/eonasdan-bootstrap-datetimepicker');
+    mix.copy('node_modules/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js', 'resources/assets/js/eonasdan-bootstrap-datetimepicker');
     // Copy Summernote's CSS and JS
     mix.copy('node_modules/summernote/dist/summernote.css', 'public/css/summernote');
     mix.copy('node_modules/summernote/dist/summernote.js', 'resources/assets/js/summernote');
