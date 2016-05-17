@@ -6,7 +6,11 @@
     </head>
     <body>
         <div class="container-fluid page">
-            @yield('body')
+            @include('layouts.header')
+            @include('layouts.nav')
+            <div class="content">
+                @yield('body')
+            </div>
         </div>
 
         <script type="text/javascript" src="{{ elixir('js/default.js') }}"></script>

@@ -18,9 +18,45 @@ body {
 .page {
     @include page-width();
     padding: 15px;
+    position: relative;
+}
+.content {
+    padding: 20px;
+    @media (min-width: $screen-sm-min) {
+        margin-left: 200px;
+    }
 }
 
 /* Header */
+.sidebar-toggle {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.sidebar-open .sidebar-toggle {
+    margin-left: 200px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    @media (min-width: $screen-sm-min) {
+        left: 0;
+    }
+}
+.sidebar-open .sidebar {
+    left: 0;
+}
 
 /* Default Styles */
 h1 {

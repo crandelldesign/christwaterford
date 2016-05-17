@@ -16,7 +16,10 @@ class HomeController extends Controller
 
     public function getIndex()
     {
-        //
+        $view = view('home.index');
+        $view->active_page = 'home';
+        $view->title = 'Welcome';
+        return $view;
     }
 
     public function getEvents($month_year = null)
