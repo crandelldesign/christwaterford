@@ -7850,8 +7850,18 @@ body {
       margin-left: 200px; } }
 
 /* Header */
-.sidebar-toggle {
+@media (min-width: 768px) {
+  .header {
+    margin-left: 200px; } }
+
+.header .logo {
+  max-width: 850px; }
+
+.header .sidebar-toggle {
   transition: all 0.3s; }
+  @media (min-width: 768px) {
+    .header .sidebar-toggle {
+      display: none; } }
 
 .sidebar-open .sidebar-toggle {
   margin-left: 200px; }

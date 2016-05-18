@@ -28,12 +28,23 @@ body {
 }
 
 /* Header */
-.sidebar-toggle {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+.header {
+    @media (min-width: $screen-sm-min) {
+        margin-left: 200px;
+    }
+    .logo {
+        max-width: 850px;
+    }
+    .sidebar-toggle {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        @media (min-width: $screen-sm-min) {
+            display: none;
+        }
+    }
 }
 .sidebar-open .sidebar-toggle {
     margin-left: 200px;
