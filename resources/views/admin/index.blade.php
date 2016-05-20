@@ -2,7 +2,7 @@
 @section('content-header')
 	<h1>Welcome {{\Auth::user()->name}}</h1>
 @stop
-@section('body')
+@section('content')
 	<div class="box">
         <div class="box-body">
 

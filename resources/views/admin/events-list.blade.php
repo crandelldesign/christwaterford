@@ -5,7 +5,7 @@
 @section('content-header')
 	<h1>Events</h1>
 @stop
-@section('body')
+@section('content')
 	<div class="row">
         <div class="col-lg-10">
 			<div class="box">

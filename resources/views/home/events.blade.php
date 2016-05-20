@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('body')
+@section('content')
 <h1>Calendar</h1>
 
 <div class="calendar-page">

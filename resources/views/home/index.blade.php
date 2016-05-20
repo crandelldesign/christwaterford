@@ -1,3 +1,3 @@
 @extends('layouts.default')
-@section('body')
+@section('content')
 @stop

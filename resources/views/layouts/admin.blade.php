@@ -14,7 +14,7 @@
                 @yield('content-header')
                 </section>
                 <section class="content">
-                @yield('body')
+                @yield('content')
                 </section>
             </div>
         @include('layouts.admin-footer')
