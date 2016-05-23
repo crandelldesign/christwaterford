@@ -5,8 +5,8 @@
         @include('layouts.head')
     </head>
     <body>
+        @include('layouts.header')
         <div class="container-fluid page">
-            @include('layouts.header')
             @include('layouts.nav')
             <div class="content">
                 @yield('content')

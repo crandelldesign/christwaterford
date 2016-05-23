@@ -23,15 +23,15 @@ $(document).ready(function()
                 return options.inverse(this);
         }
     });
-    var neg = $('.main-header').outerHeight() + $('.main-footer').outerHeight();
+    var neg = $('.header').outerHeight() + $('.footer').outerHeight();
     var window_height = $(window).height();
-    var sidebar_height = $(".sidebar").height();
+    var sidebar_height = $('.sidebar').height();
     var postSetWidth;
     if (window_height >= sidebar_height) {
-        $(".content").css('min-height', window_height - neg);
+        $('.content').css('min-height', window_height - neg);
         postSetWidth = window_height - neg;
     } else {
-        $(".content").css('min-height', sidebar_height);
+        $('.content').css('min-height', sidebar_height);
         postSetWidth = sidebar_height;
     }
 

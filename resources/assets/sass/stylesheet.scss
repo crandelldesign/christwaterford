@@ -29,8 +29,13 @@ body {
 
 /* Header */
 .header {
+    background-color: $darkblue;
+    > .container-fluid {
+        @include page-width();
+        padding: 15px;
+    }
     @media (min-width: $screen-sm-min) {
-        margin-left: 200px;
+        /*margin-left: 200px;*/
     }
     .logo {
         max-width: 850px;
@@ -56,6 +61,7 @@ body {
     top: 0;
     left: -200px;
     width: 200px;
+    min-height: 100%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
