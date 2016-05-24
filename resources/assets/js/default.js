@@ -1,5 +1,6 @@
 $(document).ready(function()
 {
+    // Handlebars
     Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
 
         switch (operator) {
@@ -23,20 +24,40 @@ $(document).ready(function()
                 return options.inverse(this);
         }
     });
-    var neg = $('.header').outerHeight() + $('.footer').outerHeight();
-    var window_height = $(window).height();
-    var sidebar_height = $('.sidebar').height();
-    var postSetWidth;
-    if (window_height >= sidebar_height) {
-        $('.content').css('min-height', window_height - neg);
-        postSetWidth = window_height - neg;
-    } else {
-        $('.content').css('min-height', sidebar_height);
-        postSetWidth = sidebar_height;
+    // Set Height
+    var resizeTimer;
+    setHeight();
+    function setHeight()
+    {
+        var neg = $('.header').outerHeight() + $('.footer').outerHeight() + 30;
+        $('.content').css('min-height', 0);
+        var window_height = $(window).height();
+        var sidebar_height = $('.sidebar').height();
+        var postSetWidth;
+        if ((window_height - neg) >= sidebar_height) {
+            $('.content').css('min-height', window_height - neg);
+            postSetWidth = window_height - neg;
+        } else {
+            $('.content').css('min-height', sidebar_height);
+            postSetWidth = sidebar_height;
+        }
     }
-
+    $(window).on('resize', function(event)
+    {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function()
+        {
+            setHeight();
+        }, 150);
+    });
+    // Sidebar Toggle
     $('.sidebar-toggle').on('click', function(event)
     {
         $('body').toggleClass('sidebar-open');
+    });
+    // Sidebar Expand
+    $('.collapsible').on('click', function(event)
+    {
+        $(this).find('.rotate').toggleClass('down');
     });
 });

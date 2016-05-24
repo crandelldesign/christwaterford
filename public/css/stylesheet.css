@@ -7840,11 +7840,13 @@ body {
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-  padding: 15px;
-  position: relative; }
+  padding: 15px; }
+  @media (min-width: 768px) {
+    .page {
+      position: relative; } }
 
 .content {
-  padding: 20px; }
+  padding: 5px 0 5px 15px; }
   @media (min-width: 768px) {
     .content {
       margin-left: 200px; } }
@@ -7863,10 +7865,33 @@ body {
   .header .logo {
     max-width: 850px; }
   .header .sidebar-toggle {
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    margin-top: 8px;
+    margin-bottom: -5px;
+    position: relative;
+    padding: 8px 8px;
+    margin-right: 15px;
+    border: 1px solid #FFF;
+    background-color: #003366;
+    color: #FFF;
+    border-radius: 4px;
+    width: 83px; }
     @media (min-width: 768px) {
       .header .sidebar-toggle {
         display: none; } }
+    .header .sidebar-toggle .toggle-text {
+      margin-right: 5px;
+      line-height: normal; }
+    .header .sidebar-toggle .icon-bars {
+      margin-top: 2px; }
+    .header .sidebar-toggle .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #FFF; }
+    .header .sidebar-toggle .icon-bar + .icon-bar {
+      margin-top: 4px; }
 
 .sidebar-open .sidebar-toggle {
   margin-left: 200px; }
@@ -7875,13 +7900,33 @@ body {
 .sidebar {
   position: absolute;
   top: 0;
-  left: -200px;
+  left: -220px;
   width: 200px;
   min-height: 100%;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  box-shadow: 0 0 6px 1.5px rgba(0, 0, 0, 0.16), 0 0 6px 1.5px rgba(0, 0, 0, 0.23);
+  background-color: #FFF;
+  padding: 15px 0;
+  z-index: 20; }
   @media (min-width: 768px) {
     .sidebar {
+      top: 0;
       left: 0; } }
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .sidebar ul > li > a {
+      padding: 5px 15px;
+      display: block; }
+      .sidebar ul > li > a .rotate {
+        transition: all .25s linear; }
+        .sidebar ul > li > a .rotate.down {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+    .sidebar ul > li ul {
+      background-color: #EEE;
+      padding: 5px; }
 
 .sidebar-open .sidebar {
   left: 0; }
@@ -7999,7 +8044,8 @@ a {
   font-size: 10px; }
   @media (min-width: 768px) {
     .footer {
-      font-size: 12px; } }
+      font-size: 12px;
+      z-index: 30; } }
   .footer > .container-fluid {
     max-width: 1300px;
     margin-right: auto;

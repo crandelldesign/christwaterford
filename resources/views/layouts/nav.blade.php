@@ -8,8 +8,8 @@
         <li><a href="{{url('/worship-information')}}">Worship Information</a></li>
         <li><a href="{{url('/events')}}">Events</a></li>
         <li><a href="{{url('/caller.pdf')}}" target="_blank">Parish Caller</a></li>
-        <li class="collapsible"><a href="#">Teams</a>
-            <ul>
+        <li class="collapsible"><a data-toggle="collapse" href="#teams">Teams <i class="fa fa-angle-right rotate pull-right" aria-hidden="true"></i></a>
+            <ul class="collapse" id="teams">
                 <li><a href="{{url('/ministries/worship-music')}}">Worship &amp; Music</a></li>
                 <li><a href="{{url('/ministries/educational')}}">Educational</a></li>
                 <li><a href="{{url('/ministries/children-youth')}}">Children &amp; Youth</a></li>

@@ -35,3 +35,16 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+@mixin rotate-icon() {
+    .rotate {
+        -moz-transition: all .25s linear;
+        -webkit-transition: all .25s linear;
+        transition: all .25s linear;
+        &.down {
+            -moz-transform:rotate(90deg);
+            -webkit-transform:rotate(90deg);
+            transform:rotate(90deg);
+        }
+    }
+}

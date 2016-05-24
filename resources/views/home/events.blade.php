@@ -81,7 +81,7 @@
         <div class="panel-heading" role="tab" id="heading@{{@index}}">
             @{{#if description}}
             <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="see-more-left event-see-more">
-            <i class="fa fa-chevron-right rotate" aria-hidden="true"></i>
+            <i class="fa fa-angle-right rotate" aria-hidden="true"></i>
             </a>
             @{{/if}}
             <h4 class="panel-title">
@@ -172,7 +172,7 @@ $(document).ready(function()
     });
     $('#event-modal').on('click', '.event-see-more', function(event)
     {
-        $('#event-modal').find('.event-see-more .rotate').toggleClass('down');
+        $(this).find('.rotate').toggleClass('down');
     });
 });
 </script>
