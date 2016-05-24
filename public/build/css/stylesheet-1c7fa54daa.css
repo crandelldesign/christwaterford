@@ -7850,6 +7850,11 @@ body {
   @media (min-width: 768px) {
     .content {
       margin-left: 200px; } }
+  .content > h1:first-child {
+    margin-top: 0; }
+    @media (min-width: 768px) {
+      .content > h1:first-child {
+        margin-bottom: 30px; } }
 
 /* Header */
 .header {

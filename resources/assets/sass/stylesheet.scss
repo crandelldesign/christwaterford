@@ -27,6 +27,12 @@ body {
     @media (min-width: $screen-sm-min) {
         margin-left: 200px;
     }
+    > h1:first-child {
+        margin-top: 0;
+        @media (min-width: $screen-sm-min) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 /* Header */
