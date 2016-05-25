@@ -96,7 +96,7 @@
                     </div>
                     @{{/unless}}
                     @{{#if description}}
-                    <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="event-see-more see-more-text">
+                    <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="btn btn-xs btn-white event-see-more see-more-text">
                         See More
                     </a>
                     @{{/if}}
@@ -172,7 +172,7 @@ $(document).ready(function()
     });
     $('#event-modal').on('click', '.event-see-more', function(event)
     {
-        $(this).find('.rotate').toggleClass('down');
+        $(this).parents('.panel-heading').find('.rotate').toggleClass('down');
     });
 });
 </script>
