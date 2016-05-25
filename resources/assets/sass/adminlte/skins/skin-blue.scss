@@ -11,11 +11,11 @@
   //Navbar
   .main-header {
     .navbar {
-      @include navbar-variant($light-blue, #fff);
+      @include navbar-variant($darkblue, #fff);
       .sidebar-toggle {
         color: #fff;
         &:hover {
-          background-color: darken($light-blue, 5%);
+          background-color: darken($darkblue, 5%);
         }
       }
       @media (max-width: $screen-header-collapse) {
@@ -27,7 +27,7 @@
             a {
               color: #fff;
               &:hover {
-                background: darken($light-blue, 5%);
+                background: darken($darkblue, 5%);
               }
             }
           }
@@ -36,11 +36,11 @@
     }
     //Logo
     .logo {
-      @include logo-variant(darken($light-blue, 5%));
+      @include logo-variant(darken($darkblue, 5%));
     }
 
     li.user-header {
-      background-color: $light-blue;
+      background-color: $darkblue;
     }
   }
 
@@ -50,9 +50,9 @@
   }
 
   //Create the sidebar skin
-  @include skin-dark-sidebar($light-blue);
+  @include skin-dark-sidebar($darkblue);
 }
 
 .skin-blue.layout-top-nav .main-header > .logo {
-  @include logo-variant($light-blue);
+  @include logo-variant($darkblue);
 }
