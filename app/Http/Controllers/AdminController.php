@@ -34,8 +34,6 @@ class AdminController extends Controller
 
     public function postEvents(Request $request, $action = null)
     {
-        print_r($request->all());
-
         $action = '';
         if ($request->get('event_id') == 0) {
             $event = new CalendarEvent;
