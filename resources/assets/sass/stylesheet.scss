@@ -317,9 +317,14 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
             @media (min-width: $screen-sm-min) {
                 padding: 8px;
             }
+            &.has-event {  
+                cursor: pointer;
+                &:hover {
+                    background-color: #f5f5f5;
+                }
+            }
             a.cal-event {
                 display: block;
-                cursor: pointer;
                 font-size: 8px;
                 margin-bottom: 5px;
                 overflow: hidden;

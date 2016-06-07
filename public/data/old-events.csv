@@ -1,4 +1,4 @@
-"created_at","updated_at",id,"name","slug","starts_at","ends_at","description",is_featured,is_all_day,old_id
+"created_at","updated_at","id","name","slug","starts_at","ends_at","description","is_featured","is_all_day","old_id"
 "2014-12-11 23:50:07","2014-12-11 23:50:07",1,"Choir Cantata:  “Shout the Good News”","choir-cantata-shout-the-good-news","2011-12-11 10:00:00","2011-12-11 11:00:00","",1,0,1
 "2014-12-11 23:50:07","2014-12-11 23:50:07",2,"Children’s Christmas Program: “The Birth of Jesus”","childrens-christmas-program-the-birth-of-jesus","2011-12-18 10:00:00","2011-12-18 11:00:00","",1,0,2
 "2014-12-11 23:50:07","2014-12-11 23:50:07",3,"Early Christmas Eve Service","early-christmas-eve-service","2011-12-24 19:00:00","2011-12-24 20:30:00","",1,0,3
@@ -2806,3 +2806,101 @@ outings. All H.S. students are welcome!&nbsp;",1,0,NULL
 "2016-04-02 16:47:32","2016-04-02 16:47:32",2608,"Chancel Choir","chancel-choir","2016-04-28 19:30:00","2016-04-28 00:00:00",NULL,0,0,NULL
 "2016-04-02 16:47:53","2016-04-02 16:47:53",2609,"Karate","karate","2016-04-28 18:00:00","2016-04-28 19:30:00",NULL,0,0,NULL
 "2016-04-02 16:48:11","2016-04-02 16:48:11",2610,"AA Meeting","aa-meeting","2016-04-30 20:00:00","2016-04-30 00:00:00",NULL,0,0,NULL
+"2016-05-08 14:53:07","2016-05-08 14:53:07",2611,"Pentecost Sunday","pentecost-sunday","2016-05-15 00:00:00","2016-05-15 00:00:00","<p><span style=\"font-weight: bold;\">Wear Something Red!</span></p><p>Pentecost Sunday celebrates the birth of God's Church through the outpouring of God's Spirit. It comes fifty days after Easter with the rush of a mighty wind and tongues of fire as told in Acts 2, empowering the followers of Jesus to share the good news of God's love with all the world. We encourage everyone to wear something red this day symbolic of the Holy Spirit. Join us this Sunday as we give thanks for the gift of the church and give recognition to our first communicants. A number of our young people will be joining us at the Lords's Table for the first time. We welcome them and pray for their continued growth in faith through this holy meal.&nbsp;</p>",1,1,NULL
+"2016-05-08 14:56:40","2016-05-08 14:56:40",2612,"Pastor Gerald Switzer Celebrates 50th Anniversary of this Ordination into the Gospel Ministry","pastor-gerald-switzer-celebrates-50th-anniversary-of-this-ordination-into-the-gospel-ministry","2016-05-22 10:00:00","2016-05-22 00:00:00","Pastor Switzer, who served Christ of the Lakes Lutheran Church, White Lake, for many years will be with us on this Sunday to celebrate this special anniversary. We are most pleased to be able to share this special event with him and his wife, Bonnie. Pastor Switzer has also been an important part of our ministry providing pulpit supply, officiating at weddings and funerals in time of need. Join us as we give thanks for the 50 years of ministry that he has shared.&nbsp;",1,0,NULL
+"2016-05-08 14:57:40","2016-05-08 14:57:40",2613,"Mother's Day","mothers-day","2016-05-08 00:00:00","2016-05-08 00:00:00",NULL,1,1,NULL
+"2016-05-08 14:58:13","2016-05-08 14:58:13",2614,"Synod Assembly","synod-assembly","2016-05-13 00:00:00","2016-05-13 00:00:00",NULL,1,1,NULL
+"2016-05-08 14:58:28","2016-05-08 14:58:28",2615,"Synod Assembly","synod-assembly","2016-05-14 00:00:00","2016-05-14 00:00:00",NULL,1,1,NULL
+"2016-05-08 14:58:49","2016-05-08 14:58:49",2616,"Graduate Recognition","graduate-recognition","2016-06-05 00:00:00","2016-06-05 00:00:00",NULL,1,1,NULL
+"2016-05-08 14:59:11","2016-06-06 20:44:57",2617,"Congregational Meeting","congregational-meeting","2016-06-12 11:00:00","2016-06-12 11:30:00","The agenda for this congregational meeting will include the
+election for four positions on council, and updates from our
+Finance Team, Search Team, and Mission/Welcome Statement
+Team. We intend to keep the reports brief so that all may
+attend the reception for Pastor Peterson.",1,0,NULL
+"2016-05-12 21:45:16","2016-05-12 21:45:16",2618,"Karate","karate","2016-05-13 18:00:00","2016-05-13 19:00:00",NULL,0,0,NULL
+"2016-05-12 21:45:48","2016-05-12 21:45:48",2619,"AA Meeting","aa-meeting","2016-05-14 20:00:00","2016-05-14 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:47:08","2016-05-12 21:47:08",2620,"Bible Study","bible-study","2016-05-15 09:00:00","2016-05-15 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:48:45","2016-05-12 21:48:45",2621,"First Communion Worship Service","first-communion-worship-service","2016-05-15 10:00:00","2016-05-15 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:49:04","2016-05-12 21:49:04",2622,"Sunday Alive","sunday-alive","2016-05-15 10:10:00","2016-05-15 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:49:28","2016-05-12 21:49:28",2623,"Adult Discussion","adult-discussion","2016-05-15 18:30:00","2016-05-15 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:49:44","2016-05-12 21:49:44",2624,"Men’s Food & Fellowship","mens-food-fellowship","2016-05-16 18:30:00","2016-05-16 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:50:03","2016-05-12 21:50:03",2625,"Karate","karate","2016-05-17 18:00:00","2016-05-17 19:00:00",NULL,0,0,NULL
+"2016-05-12 21:50:21","2016-05-12 21:50:21",2626,"Golf","golf","2016-05-18 07:45:00","2016-05-18 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:50:40","2016-05-12 21:50:40",2627,"AA Meeting","aa-meeting","2016-05-18 20:00:00","2016-05-18 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:50:57","2016-05-12 21:50:57",2628,"Tops","tops","2016-05-19 18:30:00","2016-05-19 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:54:19","2016-05-12 21:54:19",2629,"Chancel Choir","chancel-choir","2016-05-19 19:30:00","2016-05-19 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:55:42","2016-05-12 21:55:42",2630,"Karate","karate","2016-05-20 18:00:00","2016-05-20 19:00:00",NULL,0,0,NULL
+"2016-05-12 21:56:13","2016-05-12 21:56:13",2631,"AA Meeting","aa-meeting","2016-05-21 20:00:00","2016-05-21 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:56:44","2016-05-12 21:56:44",2632,"Holy Trinity Sunday","holy-trinity-sunday","2016-05-22 00:00:00","2016-05-22 00:00:00",NULL,0,1,NULL
+"2016-05-12 21:57:15","2016-05-12 21:57:15",2633,"Bible Study","bible-study","2016-05-22 09:00:00","2016-05-22 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:57:43","2016-05-12 21:57:43",2634,"Sunday Alive","sunday-alive","2016-05-22 10:10:00","2016-05-22 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:58:38","2016-05-12 21:58:38",2635,"Bowling","bowling","2016-05-22 18:00:00","2016-05-22 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:58:53","2016-05-12 21:58:53",2636,"Quilting","quilting","2016-05-24 09:00:00","2016-05-24 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:59:10","2016-05-12 21:59:10",2637,"Karate","karate","2016-05-24 18:00:00","2016-05-24 19:00:00",NULL,0,0,NULL
+"2016-05-12 21:59:28","2016-05-12 21:59:28",2638,"Golf","golf","2016-05-25 07:45:00","2016-05-25 00:00:00",NULL,0,0,NULL
+"2016-05-12 21:59:50","2016-05-12 21:59:50",2639,"SCSA","scsa","2016-05-25 18:00:00","2016-05-25 00:00:00",NULL,0,0,NULL
+"2016-05-12 22:00:07","2016-05-12 22:00:07",2640,"AA Meeting","aa-meeting","2016-05-25 20:00:00","2016-05-25 00:00:00",NULL,0,0,NULL
+"2016-05-12 22:00:25","2016-05-12 22:00:25",2641,"TOPS","tops","2016-05-26 18:30:00","2016-05-26 00:00:00",NULL,0,0,NULL
+"2016-05-12 22:00:47","2016-05-12 22:00:47",2642,"Chancel Choir","chancel-choir","2016-05-26 19:30:00","2016-05-26 00:00:00",NULL,0,0,NULL
+"2016-05-12 22:01:08","2016-05-12 22:01:08",2643,"Karate","karate","2016-05-27 18:00:00","2016-05-27 19:00:00",NULL,0,0,NULL
+"2016-05-12 22:02:08","2016-05-12 22:02:08",2644,"AA Meeting","aa-meeting","2016-05-28 20:00:00","2016-05-28 00:00:00",NULL,0,0,NULL
+"2016-05-12 22:02:42","2016-05-12 22:02:42",2645,"2nd Sunday after Pentecost","2nd-sunday-after-pentecost","2016-05-29 00:00:00","2016-05-29 00:00:00",NULL,0,1,NULL
+"2016-05-12 22:02:57","2016-05-12 22:02:57",2646,"Bible Study","bible-study","2016-05-29 21:00:00","2016-05-29 00:00:00",NULL,0,0,NULL
+"2016-05-12 22:03:16","2016-05-12 22:03:16",2647,"Worship Service","worship-service","2016-05-29 10:00:00","2016-05-29 00:00:00",NULL,0,0,NULL
+"2016-05-12 22:03:35","2016-05-12 22:03:35",2648,"Sunday Alive","sunday-alive","2016-05-29 10:10:00","2016-05-29 00:00:00",NULL,0,0,NULL
+"2016-05-12 22:03:55","2016-05-12 22:03:55",2649,"Memorial Day","memorial-day","2016-05-30 00:00:00","2016-05-30 00:00:00",NULL,0,1,NULL
+"2016-06-06 20:43:56","2016-06-06 20:43:56",2650,"Pastor Peterson 70th Anniversary of Ordination","pastor-peterson-70th-anniversary-of-ordination","2016-06-12 10:00:00","2016-06-12 00:00:00","Pastor Wayne Peterson was the third called pastor to serve
+Christ Lutheran church from 1962 to 1983. Pastor Peterson
+and his wife, Jean, have remained members of this congregation
+and continue to participate here during the summer months. On
+this Sunday we will celebrate his 70th Anniversary of
+ordination, a truly remarkable milestone in his life. The
+congregation will join in a service of thanksgiving and
+blessing in recognition of his service to god’s church. Be sure
+to join us for this special celebration and reception to follow.",1,0,NULL
+"2016-06-06 21:13:26","2016-06-06 21:13:26",2651,"Golf","golf","2016-06-01 07:45:00","2016-06-01 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:13:46","2016-06-06 21:13:46",2652,"AA Meeting","aa-meeting","2016-06-01 20:00:00","2016-06-01 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:14:33","2016-06-06 21:20:53",2653,"TOPS","tops","2016-06-02 18:30:00","2016-06-02 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:14:58","2016-06-06 21:14:58",2654,"Karate","karate","2016-06-03 18:00:00","2016-06-03 19:30:00",NULL,0,0,NULL
+"2016-06-06 21:15:43","2016-06-06 21:15:43",2655,"Confirmation","confirmation","2016-06-04 10:30:00","2016-06-04 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:16:12","2016-06-06 21:16:12",2656,"HS Chart","hs-chart","2016-06-04 12:30:00","2016-06-04 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:16:59","2016-06-06 21:16:59",2657,"Peace Garden Planting","peace-garden-planting","2016-06-04 09:00:00","2016-06-04 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:17:16","2016-06-06 21:17:16",2658,"AA Meeting","aa-meeting","2016-06-04 20:00:00","2016-06-04 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:17:51","2016-06-06 21:17:51",2659,"3rd Sunday after Pentecost","3rd-sunday-after-pentecost","2016-06-05 00:00:00","2016-06-05 00:00:00",NULL,0,1,NULL
+"2016-06-06 21:18:13","2016-06-06 21:18:13",2660,"Communion Service","communion-service","2016-06-05 10:00:00","2016-06-05 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:18:35","2016-06-06 21:18:35",2661,"Yard Sale Intake Begins","yard-sale-intake-begins","2016-06-05 00:00:00","2016-06-05 00:00:00",NULL,0,1,NULL
+"2016-06-06 21:19:02","2016-06-06 21:19:02",2662,"Church Council","church-council","2016-06-06 19:00:00","2016-06-06 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:19:39","2016-06-06 21:19:39",2663,"Karate","karate","2016-06-07 18:00:00","2016-06-07 19:30:00",NULL,0,0,NULL
+"2016-06-06 21:20:13","2016-06-06 21:20:13",2664,"Golf","golf","2016-06-08 07:45:00","2016-06-08 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:20:30","2016-06-06 21:20:30",2665,"AA Meeting","aa-meeting","2016-06-08 20:00:00","2016-06-08 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:21:15","2016-06-06 21:21:15",2666,"TOPS","tops","2016-06-09 18:30:00","2016-06-09 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:21:43","2016-06-06 21:21:43",2667,"Karate","karate","2016-06-09 18:00:00","2016-06-09 19:30:00",NULL,0,0,NULL
+"2016-06-06 21:22:07","2016-06-06 21:22:07",2668,"Outside Group","outside-group","2016-06-11 12:00:00","2016-06-11 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:22:28","2016-06-06 21:22:28",2669,"AA Meeting","aa-meeting","2016-06-11 20:00:00","2016-06-11 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:22:50","2016-06-06 21:22:50",2670,"4th Sunday after Pentecost","4th-sunday-after-pentecost","2016-06-12 00:00:00","2016-06-12 00:00:00",NULL,0,1,NULL
+"2016-06-06 21:23:29","2016-06-06 21:23:29",2671,"Church Council","church-council","2016-06-13 19:00:00","2016-06-13 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:23:54","2016-06-06 21:23:54",2672,"Karate","karate","2016-06-14 18:00:00","2016-06-14 19:30:00",NULL,0,0,NULL
+"2016-06-06 21:24:21","2016-06-06 21:24:21",2673,"Golf","golf","2016-06-15 07:45:00","2016-06-15 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:24:46","2016-06-06 21:24:46",2674,"AA Meeting","aa-meeting","2016-06-15 20:00:00","2016-06-15 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:25:15","2016-06-06 21:25:15",2675,"5th Sunday after Pentecost","5th-sunday-after-pentecost","2016-06-19 00:00:00","2016-06-19 00:00:00",NULL,0,1,NULL
+"2016-06-06 21:25:44","2016-06-06 21:25:44",2676,"Worship Service","worship-service","2016-06-19 10:00:00","2016-06-19 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:26:07","2016-06-06 21:26:07",2677,"Sunday School","sunday-school","2016-06-19 10:10:00","2016-06-19 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:26:24","2016-06-06 21:26:24",2678,"Father's Day","fathers-day","2016-06-19 00:00:00","2016-06-19 00:00:00",NULL,0,1,NULL
+"2016-06-06 21:26:45","2016-06-06 21:26:45",2679,"6th Sunday after Pentecost","6th-sunday-after-pentecost","2016-06-26 00:00:00","2016-06-26 00:00:00",NULL,0,1,NULL
+"2016-06-06 21:27:04","2016-06-06 21:27:04",2680,"Worship Service","worship-service","2016-06-26 10:00:00","2016-06-26 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:54:40","2016-06-06 21:54:40",2681,"TOPS","tops","2016-06-16 18:30:00","2016-06-16 00:00:00",NULL,0,0,NULL
+"2016-06-06 21:55:14","2016-06-06 21:55:14",2682,"Karate","karate","2016-06-17 18:00:00","2016-06-17 19:30:00",NULL,0,0,NULL
+"2016-06-06 21:55:33","2016-06-06 21:56:15",2683,"Member Wedding","member-wedding","2016-06-18 00:00:00","2016-06-18 00:00:00",NULL,0,1,NULL
+"2016-06-06 21:55:50","2016-06-06 21:55:50",2684,"AA Meeting","aa-meeting","2016-06-18 20:00:00","2016-06-18 00:00:00",NULL,0,0,NULL
+"2016-06-06 22:02:16","2016-06-06 22:02:16",2685,"Men's Stir Fry","mens-stir-fry","2016-06-20 18:30:00","2016-06-20 00:00:00",NULL,0,0,NULL
+"2016-06-06 22:02:42","2016-06-06 22:02:42",2686,"Karate","karate","2016-06-21 18:00:00","2016-06-21 19:30:00",NULL,0,0,NULL
+"2016-06-06 22:03:11","2016-06-06 22:03:11",2687,"Golf","golf","2016-06-22 07:45:00","2016-06-22 00:00:00",NULL,0,0,NULL
+"2016-06-06 22:03:31","2016-06-06 22:03:31",2688,"AA Meeting","aa-meeting","2016-06-22 20:00:00","2016-06-22 00:00:00",NULL,0,0,NULL
+"2016-06-06 22:03:52","2016-06-06 22:03:52",2689,"TOPS","tops","2016-06-23 18:30:00","2016-06-23 00:00:00",NULL,0,0,NULL
+"2016-06-06 22:04:12","2016-06-06 22:04:12",2690,"Karate","karate","2016-06-24 18:00:00","2016-06-24 19:30:00",NULL,0,0,NULL
+"2016-06-06 22:04:57","2016-06-06 22:04:57",2691,"AA Meeting","aa-meeting","2016-06-25 20:00:00","2016-06-25 00:00:00",NULL,0,0,NULL
+"2016-06-06 22:05:23","2016-06-06 22:05:23",2692,"Karate","karate","2016-06-28 18:00:00","2016-06-28 19:30:00",NULL,0,0,NULL
+"2016-06-06 22:05:56","2016-06-06 22:05:56",2693,"Golf","golf","2016-06-29 07:45:00","2016-06-29 00:00:00",NULL,0,0,NULL
+"2016-06-06 22:06:16","2016-06-06 22:06:16",2694,"AA Meeting","aa-meeting","2016-06-29 20:00:00","2016-06-29 00:00:00",NULL,0,0,NULL
+"2016-06-06 22:06:45","2016-06-06 22:06:45",2695,"TOPS","tops","2016-06-30 18:30:00","2016-06-30 00:00:00",NULL,0,0,NULL
+"2016-06-06 22:07:08","2016-06-06 22:07:08",2696,"Karate","karate","2016-07-01 18:00:00","2016-07-01 19:30:00",NULL,0,0,NULL
