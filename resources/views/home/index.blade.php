@@ -1,8 +1,19 @@
 @extends('layouts.default')
+
+@section('head')
+<link rel="stylesheet" type="text/css" href="{{'/css/slick/slick.css'}}">
+@stop
+
 @section('content')
      
 <h1>What makes a church special?</h1>
 <h2>It's people like you!</h2>
+
+<div class="slideshow">
+    <div class="item"><img src="http://placehold.it/800x300?text=Photo+1" class="img-responsive center-block"></div>
+    <div class="item"><img src="http://placehold.it/800x300?text=Photo+2" class="img-responsive center-block"></div>
+    <div class="item"><img src="http://placehold.it/800x300?text=Photo+3" class="img-responsive center-block"></div>
+</div>
 
 <div class="row">
     <div class="col-sm-6">
@@ -36,4 +47,17 @@
 
 <p class="tagline">Where CLC also means &quot;Caring, Loving Community.&quot;</p>
 
+@stop
+
+@section('scripts')
+<script>
+    $(document).ready(function()
+    {
+        $('.slideshow').slick({
+            autoplay: true,
+            prevArrow: '<button type="button" class="slideshow-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+            nextArrow: '<button type="button" class="slideshow-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
+        });
+    });
+</script>
 @stop

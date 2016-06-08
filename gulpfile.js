@@ -46,6 +46,9 @@ elixir(function(mix) {
     // Copy Summernote's CSS and JS
     mix.copy('node_modules/summernote/dist/summernote.css', 'public/css/summernote');
     mix.copy('node_modules/summernote/dist/summernote.js', 'resources/assets/js/summernote');
+    // Copy Slick's CSS and JS
+    mix.copy('node_modules/slick-carousel/slick/slick.css', 'public/css/slick');
+    mix.copy('node_modules/slick-carousel/slick/slick.js', 'resources/assets/js/slick');
     // Build JS
     mix.scripts(
         [
@@ -53,6 +56,7 @@ elixir(function(mix) {
             'bootstrap/bootstrap.js',
             'handlebars/handlebars.js',
             'moment/moment.min.js',
+            'slick/slick.js',
             'default.js'
         ],
         'public/js/default.js'

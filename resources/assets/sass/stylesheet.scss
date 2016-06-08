@@ -292,6 +292,32 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
     color: #666;
 }
 
+/* Slideshow */
+.slideshow {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    .slideshow-prev, .slideshow-next {
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 25px;
+        height: 100%;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+        z-index: 20;
+    }
+    .slideshow-prev {
+        left: 0;
+    }
+    .slideshow-next {
+        right: 0;
+    }
+}
+
 /* Events */
 .calendar-page {
     position: relative;

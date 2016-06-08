@@ -8119,6 +8119,28 @@ a {
 .details {
   color: #666; }
 
+/* Slideshow */
+.slideshow {
+  max-width: 800px;
+  margin: 0 auto 20px auto; }
+  .slideshow .slideshow-prev, .slideshow .slideshow-next {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 25px;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 20; }
+  .slideshow .slideshow-prev {
+    left: 0; }
+  .slideshow .slideshow-next {
+    right: 0; }
+
 /* Events */
 .calendar-page {
   position: relative; }
