@@ -18,6 +18,15 @@ class HomeController extends Controller
         $view = view('home.index');
         $view->active_page = 'home';
         $view->title = 'Welcome';
+
+        $date = strtotime("-1 days");
+        $datelimit = strtotime("+120 days");
+        $view->events = CalendarEvent::where('starts_at','>=',date('Y-m-d H:i:s', $date))
+            ->where('starts_at','<',date('Y-m-d H:i:s', $datelimit))
+            ->where('is_featured','=',1)
+            ->orderBy('starts_at')
+            ->take(10)
+            ->get();
         return $view;
     }
 
@@ -58,8 +67,8 @@ class HomeController extends Controller
                 ->get();
         });*/
 
-        $events = CalendarEvent::where('starts_at','>=',date("Y-m-d H:i:s", $first_day_of_the_month))
-                ->where('starts_at','<',date("Y-m-d H:i:s", $next_month))
+        $events = CalendarEvent::where('starts_at','>=',date('Y-m-d H:i:s', $first_day_of_the_month))
+                ->where('starts_at','<',date('Y-m-d H:i:s', $next_month))
                 ->orderBy('starts_at')
                 ->orderBy('is_all_day')
                 ->get();
@@ -89,7 +98,7 @@ class HomeController extends Controller
         if ($request->get('event')) {
             $event = CalendarEvent::find($request->get('event'));
             if ($event) {
-                $phpdate = strtotime($event->starts_at);
+                $phpdate = strtotime(strtok($event->starts_at,' '));
                 $tomorrow = strtotime('+1 day', $phpdate);
                 $events = CalendarEvent::where('starts_at','>=',date("Y-m-d H:i:s", $phpdate))
                     ->where('starts_at','<',date("Y-m-d H:i:s", $tomorrow))
@@ -105,7 +114,8 @@ class HomeController extends Controller
                 }
 
                 $view->event = $event;
-                $view->events = $event;
+                $view->events = $events;
+                $view->event_date = $phpdate;
             }
         }
 

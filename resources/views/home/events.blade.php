@@ -65,10 +65,52 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Modal title</h4>
+                <h4 class="modal-title">{{isset($event_date)?date('l, F j, Y',$event_date):''}}</h4>
             </div>
             <div class="modal-body">
-                <div id="event-template-container"></div>
+                <div id="event-template-container">
+                    @if (isset($events))
+                        <div class="panel-group" id="event-accordion" role="tablist" aria-multiselectable="true">
+                            @foreach ($events as $event)
+                            <div class="panel event-panel">
+                                <div class="panel-heading" role="tab" id="heading{{$event->id}}">
+                                    @if ($event->description)
+                                    <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse{{$event->id}}" class="see-more-left event-see-more collapsed">
+                                    <i class="fa fa-angle-right rotate" aria-hidden="true"></i>
+                                    </a>
+                                    @endif
+                                    <h4 class="panel-title">
+                                        {{$event->name}}
+                                        <div class="more-info">
+                                            @if (!$event->is_all_day)
+                                            <div class="event-time">
+                                                {{$event->starts_at_time_formatted}}
+                                                @if ($event->is_has_ends_at)
+                                                - {{$event->ends_at_time_formatted}}
+                                                @endif
+                                            </div>
+                                            @endif
+                                            @if ($event->description)
+                                            <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse{{$event->id}}" class="btn btn-xs btn-darkgreenblue event-see-more see-more-text collapsed">
+                                                See More
+                                            </a>
+                                            @endif
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </h4>
+                                </div>
+                                @if ($event->description)
+                                <div id="collapse{{$event->id}}" class="panel-collapse collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                    {!! $event->description !!}
+                                    </div>
+                                </div>
+                                @endif
+                            </div>
+                            @endforeach
+                        </div>
+                    @endif
+                </div>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -191,7 +233,12 @@ $(document).ready(function()
     }
 
     if (getUrlVars()['event']) {
-        $('#event-modal').modal('show');
+        var event_id = getUrlVars()['event'];
+        $('#heading'+event_id).find('.rotate').toggleClass('down');
+        $('#heading'+event_id).find('.see-more-text').text('See Less');
+        $('#collapse'+event_id).collapse('show').on('shown.bs.collapse', function () {
+            $('#event-modal').modal('show');
+        });
     }
 });
 </script>

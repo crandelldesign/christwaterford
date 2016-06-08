@@ -20,6 +20,17 @@
     </div>
     <div class="col-sm-6">
         <h2>Upcoming Events</h2>
+        @if(count($events) > 0)
+            <ul class="upcoming-events-list">
+            @foreach($events as $event)
+                <li><a href="{{url('/events/'.strtolower(date('F-Y',strtotime($event->starts_at))).'?event='.$event->id)}}">{{$event->name}}</a><br>
+                    <small>{{date('n/j/Y', strtotime($event->starts_at))}} {{!$event->is_all_day?'- '.date('g:ia',strtotime($event->starts_at)):''}}</small></li>
+            @endforeach
+            </ul>
+        @else
+        <p>There are not any major events scheduled at this time.</p>
+        @endif
+        <p><a href="{{url('/')}}/events" class="btn btn-sm btn-darkgreenblue">See All Events <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
     </div>
 </div>
 
