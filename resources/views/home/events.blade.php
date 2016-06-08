@@ -77,10 +77,10 @@
 <script id="event-template" type="x-tmpl-mustache">
     <div class="panel-group" id="event-accordion" role="tablist" aria-multiselectable="true">
     @{{#each data}}
-    <div class="panel panel-default event-panel">
-        <div class="panel-heading" role="tab" id="heading@{{@index}}">
+    <div class="panel event-panel">
+        <div class="panel-heading" role="tab" id="heading@{{id}}">
             @{{#if description}}
-            <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="see-more-left event-see-more">
+            <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{id}}" class="see-more-left event-see-more collapsed">
             <i class="fa fa-angle-right rotate" aria-hidden="true"></i>
             </a>
             @{{/if}}
@@ -96,7 +96,7 @@
                     </div>
                     @{{/unless}}
                     @{{#if description}}
-                    <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{@index}}" class="btn btn-xs btn-white event-see-more see-more-text">
+                    <a role="button" data-toggle="collapse" data-parent="#event-accordion" href="#collapse@{{id}}" class="btn btn-xs btn-darkgreenblue event-see-more see-more-text collapsed">
                         See More
                     </a>
                     @{{/if}}
@@ -105,7 +105,7 @@
             </h4>
         </div>
         @{{#if description}}
-        <div id="collapse@{{@index}}" class="panel-collapse collapse" role="tabpanel">
+        <div id="collapse@{{id}}" class="panel-collapse collapse" role="tabpanel">
             <div class="panel-body">
             @{{{description}}}
             </div>
@@ -173,7 +173,26 @@ $(document).ready(function()
     $('#event-modal').on('click', '.event-see-more', function(event)
     {
         $(this).parents('.panel-heading').find('.rotate').toggleClass('down');
+
+        if ($(this).parents('.panel-heading').find('.see-more-text').hasClass('collapsed')) {
+            $(this).parents('.panel-heading').find('.see-more-text').text('See Less');
+        } else {
+            $(this).parents('.panel-heading').find('.see-more-text').text('See More');
+        }
     });
+
+    function getUrlVars()
+    {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+        });
+        return vars;
+    }
+
+    if (getUrlVars()['event']) {
+        $('#event-modal').modal('show');
+    }
 });
 </script>
 @stop

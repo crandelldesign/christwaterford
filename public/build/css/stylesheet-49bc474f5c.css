@@ -8065,6 +8065,8 @@ a {
   .btn-blue:hover {
     background-color: #004080;
     color: #FFF; }
+  .btn-blue:focus {
+    color: #FFF; }
 
 .btn-darkgreenblue {
   background-color: #00746b;
@@ -8073,11 +8075,17 @@ a {
   .btn-darkgreenblue:hover {
     background-color: #008e83;
     color: #FFF; }
+  .btn-darkgreenblue:focus {
+    color: #FFF; }
 
 .btn-white {
-  background-color: #FFF; }
+  background-color: #FFF;
+  border: 1px solid #FFF; }
   .btn-white:hover {
+    color: #00a99d;
     background-color: #eeefed; }
+  .btn-white:focus {
+    color: #00a99d; }
 
 /* Spacing Elements */
 .margin-left-5 {
@@ -8230,12 +8238,11 @@ a {
         font-size: 14px; } }
   .calendar-page .calendar td {
     width: 14.28571%;
-    overflow: hidden;
-    min-height: 80px;
     padding: 8px 3px; }
     @media (min-width: 768px) {
       .calendar-page .calendar td {
-        padding: 8px; } }
+        padding: 8px;
+        height: 80px; } }
     .calendar-page .calendar td.has-event {
       cursor: pointer; }
       .calendar-page .calendar td.has-event:hover {
@@ -8253,29 +8260,50 @@ a {
           font-size: 11px;
           white-space: normal;
           max-width: none; } }
+      .calendar-page .calendar td a.cal-event:hover {
+        color: #00a99d; }
 
-#event-modal .event-panel .panel-heading {
-  position: relative;
-  padding-left: 30px; }
-  #event-modal .event-panel .panel-heading a.see-more-left {
-    position: absolute;
-    left: 10px; }
-    #event-modal .event-panel .panel-heading a.see-more-left .rotate {
-      transition: all .25s linear; }
-      #event-modal .event-panel .panel-heading a.see-more-left .rotate.down {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg); }
-  #event-modal .event-panel .panel-heading .more-info {
-    font-size: 12px;
-    margin-top: 2px; }
-    #event-modal .event-panel .panel-heading .more-info .event-time, #event-modal .event-panel .panel-heading .more-info .event-see-more {
-      margin-right: 8px; }
-      @media (min-width: 768px) {
-        #event-modal .event-panel .panel-heading .more-info .event-time, #event-modal .event-panel .panel-heading .more-info .event-see-more {
-          float: left; } }
-    #event-modal .event-panel .panel-heading .more-info .event-time {
-      padding: 6px 0; }
-    #event-modal .event-panel .panel-heading .more-info > div:first-child {
-      padding-left: 0; }
+.modal .modal-content {
+  overflow: hidden; }
+  .modal .modal-content .modal-header {
+    background-color: #003366; }
+    .modal .modal-content .modal-header .modal-title {
+      color: #FFF; }
+    .modal .modal-content .modal-header .close {
+      color: #FFF; }
+
+#event-modal .event-panel {
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #8b8c84; }
+  #event-modal .event-panel .panel-heading {
+    position: relative;
+    padding-left: 30px; }
+    #event-modal .event-panel .panel-heading a.see-more-left {
+      position: absolute;
+      left: 10px;
+      color: #00746b; }
+      #event-modal .event-panel .panel-heading a.see-more-left .rotate {
+        transition: all .25s linear; }
+        #event-modal .event-panel .panel-heading a.see-more-left .rotate.down {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+    #event-modal .event-panel .panel-heading .more-info {
+      font-size: 12px;
+      margin-top: 5px; }
+      #event-modal .event-panel .panel-heading .more-info .event-time, #event-modal .event-panel .panel-heading .more-info .event-see-more {
+        margin-right: 8px; }
+        @media (min-width: 768px) {
+          #event-modal .event-panel .panel-heading .more-info .event-time, #event-modal .event-panel .panel-heading .more-info .event-see-more {
+            float: left; } }
+      #event-modal .event-panel .panel-heading .more-info .event-time {
+        padding: 6px 0; }
+      #event-modal .event-panel .panel-heading .more-info > div:first-child {
+        padding-left: 0; }
+  #event-modal .event-panel .panel-body {
+    border-bottom: 0; }
+  #event-modal .event-panel:last-child {
+    border-bottom: 0; }
 
 /*# sourceMappingURL=stylesheet.css.map */

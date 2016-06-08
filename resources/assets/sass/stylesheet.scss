@@ -172,6 +172,9 @@ a {
         background-color: lighten($darkblue, 5);
         color: #FFF;
     }
+    &:focus {
+        color: #FFF;
+    }
 }
 .btn-darkgreenblue {
     background-color: $darkgreenblue;
@@ -181,11 +184,19 @@ a {
         background-color: lighten($darkgreenblue, 5);
         color: #FFF;
     }
+    &:focus {
+        color: #FFF;
+    }
 }
 .btn-white {
     background-color: #FFF;
+    border: 1px solid #FFF;
     &:hover {
+        color: $greenblue;
         background-color: lighten($gray, 40);
+    }
+    &:focus {
+        color: $greenblue;
     }
 }
 /* Spacing Elements */
@@ -311,11 +322,10 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
         }
         td {
             width: (100% / 7);
-            overflow: hidden;
-            min-height: 80px;
             padding: 8px 3px;
             @media (min-width: $screen-sm-min) {
                 padding: 8px;
+                height: 80px;
             }
             &.has-event {  
                 cursor: pointer;
@@ -336,9 +346,27 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
                     white-space: normal;
                     max-width: none;
                 }
+                &:hover {
+                    color: $greenblue;
+                }
             }
         }
     }
+}
+.modal {
+    .modal-content {
+        overflow: hidden;
+        .modal-header {
+            background-color: $darkblue;
+            .modal-title {
+                color: #FFF;
+            }
+            .close {
+                color: #FFF;
+            }
+        }
+    }
+    
 }
 #event-modal {
     .event-panel {
@@ -349,10 +377,11 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
                 position: absolute;
                 left: 10px;
                 @include rotate-icon();
+                color: $darkgreenblue;
             }
             .more-info {
                 font-size: 12px;
-                margin-top: 2px;
+                margin-top: 5px;
                 .event-time, .event-see-more {
                     margin-right: 8px;
                     @media (min-width: $screen-sm-min) {
@@ -369,6 +398,16 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
                     padding-left: 0;
                 }
             }
+        }
+        .panel-body {
+            border-bottom: 0;
+        }
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid $gray;
+        &:last-child {
+            border-bottom: 0;
         }
     }
 }

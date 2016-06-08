@@ -4,7 +4,6 @@ namespace christwaterford\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use christwaterford\Http\Requests;
 use christwaterford\Http\Controllers\Controller;
 use Auth;
 use Cache;
@@ -22,7 +21,7 @@ class HomeController extends Controller
         return $view;
     }
 
-    public function getEvents($month_year = null)
+    public function getEvents(Request $request, $month_year = null)
     {
         if ($month_year)
         {
@@ -85,6 +84,30 @@ class HomeController extends Controller
             }
         }
         $view->month = $month;
+
+
+        if ($request->get('event')) {
+            $event = CalendarEvent::find($request->get('event'));
+            if ($event) {
+                $phpdate = strtotime($event->starts_at);
+                $tomorrow = strtotime('+1 day', $phpdate);
+                $events = CalendarEvent::where('starts_at','>=',date("Y-m-d H:i:s", $phpdate))
+                    ->where('starts_at','<',date("Y-m-d H:i:s", $tomorrow))
+                    ->orderBy('starts_at')
+                    ->orderBy('is_all_day')
+                    ->get();
+
+                foreach ($events as $event) {
+                    $event->starts_at_date_formatted = date('n/j/Y',strtotime($event->starts_at));
+                    $event->starts_at_time_formatted = date('g:ia',strtotime($event->starts_at));
+                    $event->ends_at_date_formatted = date('n/j/Y',strtotime($event->ends_at));
+                    $event->ends_at_time_formatted = date('g:ia',strtotime($event->ends_at));
+                }
+
+                $view->event = $event;
+                $view->events = $event;
+            }
+        }
 
         return $view;
     }
