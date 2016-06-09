@@ -1,7 +1,7 @@
 <nav class="sidebar">
     <ul>
-        <li><a href="{{url('/')}}">Home</a></li>
-        <li><a href="{{url('/people-like-you')}}">People Like You</a></li>
+        <li class="{{(isset($active_page)) && $active_page=='home'?'active':''}}"><a href="{{url('/')}}">Home</a></li>
+        <li class="{{(isset($active_page)) && $active_page=='people-like-you'?'active':''}}"><a href="{{url('/people-like-you')}}">People Like You</a></li>
         <li><a href="{{url('/not-lutheran')}}">Not a Lutheran?</a></li>
         <li><a href="{{url('/become-involved')}}">Become Involved</a></li>
         <li><a href="{{url('/about-us')}}">About Us</a></li>

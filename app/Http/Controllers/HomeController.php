@@ -30,6 +30,14 @@ class HomeController extends Controller
         return $view;
     }
 
+    public function getPeopleLikeYou()
+    {
+        $view = view('home.people-like-you');
+        $view->active_page = 'people-like-you';
+        $view->title = 'People Like You';
+        return $view;
+    }
+
     public function getEvents(Request $request, $month_year = null)
     {
         if ($month_year)
