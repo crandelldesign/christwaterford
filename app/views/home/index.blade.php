@@ -44,6 +44,7 @@
     </div>
     <div class="col-sm-6">
         <h2>Upcoming Events</h2>
+        <p><strong>Yard Sale donations are now welcome. Yard sale is scheduled for July 28-30. For more info call the church office 248-673-7331.</strong></p>
         @if(count($events) > 0)
             <ul class="upcoming-events-list">
             @foreach($events as $event)
