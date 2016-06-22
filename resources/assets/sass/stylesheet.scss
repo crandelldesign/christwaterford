@@ -212,11 +212,31 @@ a {
 $right-space-vars: (5 right right, 10 right right, 15 right right, 25 right right, 30 right right);
 $bottom-space-vars: (5 bottom bottom, 10 bottom bottom, 15 bottom bottom, 25 bottom bottom, 30 bottom bottom);
 $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
-
 @include generate-spacing-classes(); // left comes by default
 @include generate-spacing-classes($right-space-vars);
 @include generate-spacing-classes($bottom-space-vars);
 @include generate-spacing-classes($top-space-vars);
+/* Modals */
+.modal {
+    .modal-content {
+        overflow: hidden;
+        .modal-header {
+            background-color: $darkblue;
+            .modal-title {
+                color: #FFF;
+            }
+            .close {
+                color: #FFF;
+            }
+        }
+    }
+    
+}
+#img-modal {
+    .modal-header {
+        padding: 5px 15px;
+    }
+}
 
 /* Footer */
 .footer {
@@ -378,21 +398,6 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
             }
         }
     }
-}
-.modal {
-    .modal-content {
-        overflow: hidden;
-        .modal-header {
-            background-color: $darkblue;
-            .modal-title {
-                color: #FFF;
-            }
-            .close {
-                color: #FFF;
-            }
-        }
-    }
-    
 }
 #event-modal {
     .event-panel {

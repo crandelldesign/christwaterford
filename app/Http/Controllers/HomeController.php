@@ -67,6 +67,15 @@ class HomeController extends Controller
         return $view;
     }
 
+    public function getWorshipInformation()
+    {
+        $view = view('home.worship-information');
+        $view->active_page = 'worship-information';
+        $view->title = 'Worship Information';
+        $view->description = 'We worship at 10:00 AM on Sundays. We also have special service times during the Christmas and the Lenten/Easter season as well as Thanksgiving eve.';
+        return $view;
+    }
+
     public function getEvents(Request $request, $month_year = null)
     {
         if ($month_year)

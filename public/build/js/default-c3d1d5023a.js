@@ -19764,5 +19764,21 @@ $(document).ready(function()
     {
         $(this).find('.rotate').toggleClass('down');
     });
+
+    // Thumbnail Popup
+    $('.thumbnail-popup').on('click', function(event)
+    {
+        event.preventDefault();
+        var src = $(this).attr('href');
+        var caption = $(this).data('caption');
+        var source = $("#img-modal-template").html();
+        var template = Handlebars.compile(source);
+        var html = template({
+            src: src,
+            caption: caption
+        });
+        $('#img-modal .modal-body').html(html);
+        $('#img-modal').modal('show');
+    });
 });
 //# sourceMappingURL=default.js.map
