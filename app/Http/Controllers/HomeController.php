@@ -18,6 +18,7 @@ class HomeController extends Controller
         $view = view('home.index');
         $view->active_page = 'home';
         $view->title = 'Welcome';
+        $view->description = 'We are a community of God\'s people called to share the love of God as made known in Jesus Christ and to be transformed by that love.';
 
         $date = strtotime("-1 days");
         $datelimit = strtotime("+120 days");
@@ -35,6 +36,34 @@ class HomeController extends Controller
         $view = view('home.people-like-you');
         $view->active_page = 'people-like-you';
         $view->title = 'People Like You';
+        $view->description = 'It\'s people like you who make our church special';
+        return $view;
+    }
+
+    public function getNotLutheran()
+    {
+        $view = view('home.not-lutheran');
+        $view->active_page = 'not-lutheran';
+        $view->title = 'What if I\'m not Lutheran?';
+        $view->description = 'Everybody is welcome at Christ Lutheran. For the most part, we use standard, easy-to-follow Lutheran liturgy in our services. The words are printed in your bulletin and projected onto a large screen during the service.';
+        return $view;
+    }
+
+    public function getBecomeInvolved()
+    {
+        $view = view('home.become-involved');
+        $view->active_page = 'become-involved';
+        $view->title = 'Become Involved';
+        $view->description = 'There are many opportunities for you to become involved at Chris Lutheran Church.';
+        return $view;
+    }
+
+    public function getAboutUs()
+    {
+        $view = view('home.about-us');
+        $view->active_page = 'about-us';
+        $view->title = 'About Us';
+        $view->description = 'Christ Lutheran was organized as a congregation on October 23, 1944 in Waterford Township. On February 13, 1949, our congregation held its first worship service in our own building at its present site near Williams Lake and Airport Roads.';
         return $view;
     }
 
