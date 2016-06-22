@@ -46,7 +46,7 @@
                     @endif
                 </td>
                 @if($i % 7 == 0)
-                <tr></tr>
+                </tr><tr>
                 @endif
                 <?php $i++; ?>
             @endforeach
@@ -65,7 +65,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">{{isset($event_date)?date('l, F j, Y',$event_date):''}}</h4>
+                <h4 class="modal-title">{{isset($event_date)?date('l, F j, Y',$event_date):''}}&nbsp;</h4>
             </div>
             <div class="modal-body">
                 <div id="event-template-container">
@@ -116,7 +116,7 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<script id="event-template" type="x-tmpl-mustache">
+<script id="event-template" type="text/x-handlebars-template">
     <div class="panel-group" id="event-accordion" role="tablist" aria-multiselectable="true">
     @{{#each data}}
     <div class="panel event-panel">

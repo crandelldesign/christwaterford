@@ -18,7 +18,7 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<script id="img-modal-template" type="x-tmpl-mustache">
+<script id="img-modal-template" type="text/x-handlebars-template">
     @{{#if caption}}
     <p class="caption">@{{caption}}</p>
     @{{/if}}

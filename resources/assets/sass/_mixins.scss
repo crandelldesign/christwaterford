@@ -48,3 +48,11 @@
         }
     }
 }
+
+@mixin sidebar-active() {
+    background-color: lighten($darkblue, 5);
+}
+
+@mixin sidebar-child-active() {
+    background-color: lighten($gray, 5);
+}

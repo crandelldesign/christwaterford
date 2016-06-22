@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container-fluid">
         <div class="logo">
-            <img src="{{url('/')}}/img/christwaterford-logo.svg" alt="Christ Lutheran Church of Waterford" class="img-responsive">
+            <a href="{{url('/')}}"><img src="{{url('/')}}/img/christwaterford-logo.svg" alt="Christ Lutheran Church of Waterford" class="img-responsive"></a>
         </div>
         <div>
             <button type="button" class="sidebar-toggle">

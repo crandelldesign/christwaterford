@@ -127,11 +127,26 @@ body {
                 display: block;
                 @include rotate-icon();
                 color: #FFF;
+                &:hover, &:focus {
+                    @include sidebar-active();
+                }
+            }
+            &.active a {
+                @include sidebar-active();
             }
             ul {
                 background-color: $gray;
-                padding: 5px;
                 font-size: 14px;
+                padding: 5px 0;
+                li a {
+                    padding: 8px 20px;
+                    &:hover, &:focus {
+                        @include sidebar-child-active();
+                    }
+                }
+                li.active a {
+                    @include sidebar-child-active();
+                }
             }
         }
     }
@@ -156,7 +171,7 @@ h2 {
 }
 a {
     color: $greenblue;
-    &:hover, &.hover {
+    &:hover, &.hover, &:focus {
         color: $gray;
         text-decoration: none;
     }
