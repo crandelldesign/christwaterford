@@ -131,7 +131,7 @@ body {
                     @include sidebar-active();
                 }
             }
-            &.active a {
+            &.active > a {
                 @include sidebar-active();
             }
             ul {
@@ -216,7 +216,7 @@ a {
 }
 /* Spacing Elements */
 @mixin generate-spacing-classes(
-    $default-space-amounts-with-direction: (5 left left, 10 left left, 15 left left, 25 left left, 30 left left)
+    $default-space-amounts-with-direction: (0 left left, 5 left left, 10 left left, 15 left left, 25 left left, 30 left left)
 ) {
     @each $space in $default-space-amounts-with-direction {
         .margin-#{nth($space, 3)}-#{nth($space, 1)} {
@@ -224,9 +224,9 @@ a {
         }
     }
 }
-$right-space-vars: (5 right right, 10 right right, 15 right right, 25 right right, 30 right right);
-$bottom-space-vars: (5 bottom bottom, 10 bottom bottom, 15 bottom bottom, 25 bottom bottom, 30 bottom bottom);
-$top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
+$right-space-vars: (0 right right, 5 right right, 10 right right, 15 right right, 25 right right, 30 right right);
+$bottom-space-vars: (0 bottom bottom, 5 bottom bottom, 10 bottom bottom, 15 bottom bottom, 25 bottom bottom, 30 bottom bottom);
+$top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
 @include generate-spacing-classes(); // left comes by default
 @include generate-spacing-classes($right-space-vars);
 @include generate-spacing-classes($bottom-space-vars);
@@ -251,6 +251,10 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
     .modal-header {
         padding: 5px 15px;
     }
+}
+/* Forms */
+.form-control {
+    color: $black;
 }
 
 /* Footer */
@@ -331,12 +335,13 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
 .slideshow {
     max-width: 800px;
     margin: 0 auto 20px auto;
+    @include shadow-1();
     .slideshow-prev, .slideshow-next {
         font-size: 20px;
         position: absolute;
         top: 0;
         display: block;
-        width: 25px;
+        width: 53px;
         height: 100%;
         padding: 0;
         cursor: pointer;
@@ -344,12 +349,26 @@ $top-space-vars: (5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
         outline: none;
         background: transparent;
         z-index: 20;
+        .fa.fa-circle {
+            color: #FFF;
+            text-shadow: $z3-shadow;
+            border-radius: 50%;
+        }
     }
     .slideshow-prev {
         left: 0;
+        .fa-angle-left {
+            left: -2px;
+            top: -1px;
+        }
     }
     .slideshow-next {
         right: 0;
+        .fa-angle-left {
+            right: -2px;
+            top: -1px;
+        }
+
     }
 }
 

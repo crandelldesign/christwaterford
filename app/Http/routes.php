@@ -28,4 +28,9 @@ Route::post('password/reset', 'Auth\PasswordController@postReset');
 
 Route::controller('/admin', 'AdminController');
 Route::controller('/api', 'ApiController');
+Route::get('/ministries/worship-music', 'HomeController@ministriesWorshipMusic');
+Route::get('/ministries/educational', 'HomeController@ministriesEducational');
+Route::get('/ministries/children-youth', 'HomeController@ministriesChildrenYouth');
+Route::get('/ministries/community-global', 'HomeController@ministriesCommunityGlobal');
+Route::get('/ministries/congregational-life', 'HomeController@ministriesCongregationalLife');
 Route::controller('/', 'HomeController');

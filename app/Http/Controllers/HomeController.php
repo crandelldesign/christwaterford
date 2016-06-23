@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use christwaterford\Http\Controllers\Controller;
 use Auth;
 use Cache;
+use Mail;
 use StdClass;
 use christwaterford\CalendarEvent;
 
@@ -165,6 +166,123 @@ class HomeController extends Controller
             }
         }
 
+        return $view;
+    }
+
+    public function ministriesWorshipMusic()
+    {
+        $view = view('home.ministries-worship-music');
+        $view->active_page = 'teams';
+        $view->child_page = 'worship-music';
+        $view->title = 'Worship and Music Team';
+        $view->description = 'Through the leadership of Joan Wendell, the Minister of Music, we seek to share the love of Jesus by offering a variety of ways in which members and participants can share their gifts and talents in the praise and worship ministry of our Lord.';
+        return $view;
+    }
+
+    public function ministriesEducational()
+    {
+        $view = view('home.ministries-educational');
+        $view->active_page = 'teams';
+        $view->child_page = 'educational';
+        $view->title = 'Educational Team';
+        $view->description = 'We seek to share the love of God by offering educational opportunities that nourish the basic teachings of our faith, as well as help us grow spiritually in the awareness and workings of God in our lives and our world.';
+        return $view;
+    }
+
+    public function ministriesChildrenYouth()
+    {
+        $view = view('home.ministries-children-youth');
+        $view->active_page = 'teams';
+        $view->child_page = 'children-youth';
+        $view->title = 'Children and Youth Team';
+        $view->description = 'Kids are always welcome here. We have a nursery for children three and under during Sunday morning services. Kids hear a special message from the Pastor before going to their own Sunday Alive! activities downstairs.';
+        return $view;
+    }
+
+    public function ministriesCommunityGlobal()
+    {
+        $view = view('home.ministries-community-global');
+        $view->active_page = 'teams';
+        $view->child_page = 'community-global';
+        $view->title = 'Community and Global Team';
+        $view->description = 'We seek to share the love of God by serving those in need both locally and around the world. We strive to be advocates for God\'s justice and good stewards of God\'s creation.';
+        return $view;
+    }
+
+    public function ministriesCongregationalLife()
+    {
+        $view = view('home.ministries-congregational-life');
+        $view->active_page = 'teams';
+        $view->child_page = 'congregational-life';
+        $view->title = 'Congregational Life Team';
+        $view->description = 'We seek to share the love of God by providing opportunities for congregational fellowship and extending hospitality to all.';
+        return $view;
+    }
+
+    public function getFaces($page = null)
+    {
+        $view = view('home.faces');
+        $view->active_page = 'faces';
+        $view->title = (isset($page))?'Faces of CLCW Page '.$page:'Faces of CLCW';
+        $view->description = 'There\'s lots of fun and fellowship here at Christ Lutheran';
+        $view->page = $page;
+        return $view;
+    }
+
+    public function getContact()
+    {
+        $view = view('home.contact-us');
+        $view->active_page = 'contact';
+        $view->title = 'Contact Us';
+        $view->description = 'Now let us hear from you.';
+        return $view;
+    }
+
+    public function postContact(Request $request)
+    {
+        $validator = $this->validate(
+            $request,
+            [
+                'name' => 'required',
+                'email' => 'required',
+                'g-recaptcha-response' => 'required',
+                'message' => 'required'
+            ],
+            [
+                'name.required' => 'Please enter your name.',
+                'email.required' => 'Please enter your email address.',
+                'g-recaptcha-response.required' => 'Please check the reCAPTCHA box.',
+                'message.required' => 'Please enter a message.'
+            ]
+        );
+
+        $data = array(
+            'name' => $request->get('name'),
+            'email' => $request->get('email'),
+            'phone' => $request->get('phone'),
+            'best_time' => $request->get('best_time'),
+            'message_text' => $request->get('message'),
+        );
+
+        Mail::send('emails.contact', $data, function($message) use ($request)
+        {
+            $message->to('revjohnneg@christwaterford.org', 'Pastor John Negele');
+            $message->from($request->get('email'), $request->get('name'));
+            $message->replyTo($request->get('email'), $request->get('name'));
+            $message->subject('You\'ve Been Contacted by the Christ Lutheran Church Website.');
+        });
+
+        Analytics::trackEvent('Email', 'sent', 'Email Sent', 1);
+
+        return redirect('/contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
+    }
+
+    public function getLivestream()
+    {
+        $view = view('home.livestream');
+        $view->active_page = 'livestream';
+        $view->title = 'Livestream';
+        $view->description = 'See our worship services live right here! You can also view recent past services in case you missed them live.';
         return $view;
     }
 

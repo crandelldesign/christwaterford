@@ -10,9 +10,11 @@
 <h2>It's people like you!</h2>
 
 <div class="slideshow">
-    <div class="item"><img src="http://placehold.it/800x300?text=Photo+1" class="img-responsive center-block"></div>
-    <div class="item"><img src="http://placehold.it/800x300?text=Photo+2" class="img-responsive center-block"></div>
-    <div class="item"><img src="http://placehold.it/800x300?text=Photo+3" class="img-responsive center-block"></div>
+    <div class="item"><img srcset="{{url('/img/slideshow/slideshow1@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow1.jpg')}}" alt="Christ Lutheran Church congregation" class="img-responsive center-block"></div>
+    <div class="item"><img srcset="{{url('/img/slideshow/slideshow2@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow2.jpg')}}" alt="Christ Lutheran Church choir" class="img-responsive center-block"></div>
+    <div class="item"><img srcset="{{url('/img/slideshow/slideshow3@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow3.jpg')}}" alt="Pastor John Negele" class="img-responsive center-block"></div>
+    <div class="item"><img srcset="{{url('/img/slideshow/slideshow4@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow4.jpg')}}" alt="Pastor John Negele teaching children" class="img-responsive center-block"></div>
+    <div class="item"><img srcset="{{url('/img/slideshow/slideshow5@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow5.jpg')}}" alt="Christ Lutheran Church of Waterford" class="img-responsive center-block"></div>
 </div>
 
 <div class="row">
@@ -55,8 +57,8 @@
     {
         $('.slideshow').slick({
             autoplay: true,
-            prevArrow: '<button type="button" class="slideshow-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
-            nextArrow: '<button type="button" class="slideshow-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
+            prevArrow: '<button type="button" class="slideshow-prev"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-left fa-stack-1x"></i></span></button>',
+            nextArrow: '<button type="button" class="slideshow-next"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-right fa-stack-1x"></i></span></button>'
         });
     });
 </script>

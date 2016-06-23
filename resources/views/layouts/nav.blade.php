@@ -8,8 +8,8 @@
         <li class="{{(isset($active_page)) && $active_page=='worship-information'?'active':''}}"><a href="{{url('/worship-information')}}">Worship Information</a></li>
         <li class="{{(isset($active_page)) && $active_page=='events'?'active':''}}"><a href="{{url('/events')}}">Events</a></li>
         <li><a href="{{url('/caller.pdf')}}" target="_blank">Parish Caller</a></li>
-        <li class="collapsible {{(isset($active_page)) && $active_page=='teams'?'active':''}}"><a data-toggle="collapse" href="#teams">Teams <i class="fa fa-angle-right rotate pull-right" aria-hidden="true"></i></a>
-            <ul class="collapse" id="teams">
+        <li class="collapsible {{(isset($active_page)) && $active_page=='teams'?'active':''}}"><a data-toggle="collapse" href="#teams">Teams <i class="fa fa-angle-right rotate pull-right {{(isset($active_page)) && $active_page=='teams'?'down':''}}" aria-hidden="true"></i></a>
+            <ul class="collapse {{(isset($active_page)) && $active_page=='teams'?'in':''}}" id="teams">
                 <li class="{{(isset($child_page)) && $child_page=='worship-music'?'active':''}}"><a href="{{url('/ministries/worship-music')}}">Worship &amp; Music</a></li>
                 <li class="{{(isset($child_page)) && $child_page=='educational'?'active':''}}"><a href="{{url('/ministries/educational')}}">Educational</a></li>
                 <li class="{{(isset($child_page)) && $child_page=='children-youth'?'active':''}}"><a href="{{url('/ministries/children-youth')}}">Children &amp; Youth</a></li>

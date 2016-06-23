@@ -7937,7 +7937,7 @@ body {
           transform: rotate(90deg); }
       .sidebar ul > li > a:hover, .sidebar ul > li > a:focus {
         background-color: #004080; }
-    .sidebar ul > li.active a {
+    .sidebar ul > li.active > a {
       background-color: #004080; }
     .sidebar ul > li ul {
       background-color: #8b8c84;
@@ -8005,6 +8005,9 @@ a {
     color: #00a99d; }
 
 /* Spacing Elements */
+.margin-left-0 {
+  margin-left: 0px; }
+
 .margin-left-5 {
   margin-left: 5px; }
 
@@ -8019,6 +8022,9 @@ a {
 
 .margin-left-30 {
   margin-left: 30px; }
+
+.margin-right-0 {
+  margin-right: 0px; }
 
 .margin-right-5 {
   margin-right: 5px; }
@@ -8035,6 +8041,9 @@ a {
 .margin-right-30 {
   margin-right: 30px; }
 
+.margin-bottom-0 {
+  margin-bottom: 0px; }
+
 .margin-bottom-5 {
   margin-bottom: 5px; }
 
@@ -8049,6 +8058,9 @@ a {
 
 .margin-bottom-30 {
   margin-bottom: 30px; }
+
+.margin-top-0 {
+  margin-top: 0px; }
 
 .margin-top-5 {
   margin-top: 5px; }
@@ -8145,13 +8157,14 @@ a {
 /* Slideshow */
 .slideshow {
   max-width: 800px;
-  margin: 0 auto 20px auto; }
+  margin: 0 auto 20px auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
   .slideshow .slideshow-prev, .slideshow .slideshow-next {
     font-size: 20px;
     position: absolute;
     top: 0;
     display: block;
-    width: 25px;
+    width: 53px;
     height: 100%;
     padding: 0;
     cursor: pointer;
@@ -8159,10 +8172,20 @@ a {
     outline: none;
     background: transparent;
     z-index: 20; }
+    .slideshow .slideshow-prev .fa.fa-circle, .slideshow .slideshow-next .fa.fa-circle {
+      color: #FFF;
+      text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 50%; }
   .slideshow .slideshow-prev {
     left: 0; }
+    .slideshow .slideshow-prev .fa-angle-left {
+      left: -2px;
+      top: -1px; }
   .slideshow .slideshow-next {
     right: 0; }
+    .slideshow .slideshow-next .fa-angle-left {
+      right: -2px;
+      top: -1px; }
 
 /* Events */
 .calendar-page {

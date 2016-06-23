@@ -19760,7 +19760,7 @@ $(document).ready(function()
         $('body').toggleClass('sidebar-open');
     });
     // Sidebar Expand
-    $('.collapsible').on('click', function(event)
+    $('.sidebar .collapsible > a').on('click', function(event)
     {
         $(this).find('.rotate').toggleClass('down');
     });
