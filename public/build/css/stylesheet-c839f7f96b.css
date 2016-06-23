@@ -8090,6 +8090,10 @@ a {
 #img-modal .modal-header {
   padding: 5px 15px; }
 
+/* Forms */
+.form-control {
+  color: #252525; }
+
 /* Footer */
 .footer {
   position: absolute;
