@@ -273,21 +273,6 @@ class HomeController extends Controller
         return redirect('/contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
     }
 
-    public function getContactEmail()
-    {
-        $data = array(
-            'name' => 'Matt Crandell',
-            'email' => 'mrcrandell@gmail.com',
-            'message_text' => 'Test Test Test',
-        );
-
-        $view = view('emails.contact');
-        $view->active_page = 'contact';
-        $view->title = 'Contact Us';
-        $view->data = $data;
-        return $view;
-    }
-
     public function getLivestream()
     {
         $view = view('home.livestream');

@@ -334,6 +334,8 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
 /* Slideshow */
 .slideshow {
     max-width: 800px;
+    max-height: 300px;
+    overflow: hidden;
     margin: 0 auto 20px auto;
     @include shadow-1();
     .slideshow-prev, .slideshow-next {
