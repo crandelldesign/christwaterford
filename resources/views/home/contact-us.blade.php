@@ -30,17 +30,14 @@
             <div class="form-group">
                 <label for="name" class="sr-only">Name</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required">
-                <label class="control-label error-label" for="name">Please Enter Your Name</label>
             </div>
             <div class="form-group">
                 <label for="email" class="sr-only">Email</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required">
-                <label class="control-label error-label" for="email">Please Enter a Valid Email Address</label>
             </div>
             <div class="form-group">
                 <label for="message" class="sr-only">Message</label>
                 <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
-                <label class="control-label error-label" for="message">Please Enter a Message.</label>
             </div>
             <div class="control-group form-group {{(count($errors) > 0 && $errors->first('name'))?'has-error':''}}">
                 <div class="g-recaptcha" data-sitekey="6LcyXiMTAAAAADBTJ-YbGh2MNid-cmArBJ_Apd_Y"></div>

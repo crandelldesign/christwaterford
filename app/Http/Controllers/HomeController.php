@@ -259,8 +259,6 @@ class HomeController extends Controller
         $data = array(
             'name' => $request->get('name'),
             'email' => $request->get('email'),
-            'phone' => $request->get('phone'),
-            'best_time' => $request->get('best_time'),
             'message_text' => $request->get('message'),
         );
 
@@ -272,9 +270,22 @@ class HomeController extends Controller
             $message->subject('You\'ve Been Contacted by the Christ Lutheran Church Website.');
         });
 
-        Analytics::trackEvent('Email', 'sent', 'Email Sent', 1);
-
         return redirect('/contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
+    }
+
+    public function getContactEmail()
+    {
+        $data = array(
+            'name' => 'Matt Crandell',
+            'email' => 'mrcrandell@gmail.com',
+            'message_text' => 'Test Test Test',
+        );
+
+        $view = view('emails.contact');
+        $view->active_page = 'contact';
+        $view->title = 'Contact Us';
+        $view->data = $data;
+        return $view;
     }
 
     public function getLivestream()
