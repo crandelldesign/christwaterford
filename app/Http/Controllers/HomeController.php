@@ -175,7 +175,7 @@ class HomeController extends Controller
         $view->active_page = 'teams';
         $view->child_page = 'worship-music';
         $view->title = 'Worship and Music Team';
-        $view->description = 'Through the leadership of Joan Wendell, the Minister of Music, we seek to share the love of Jesus by offering a variety of ways in which members and participants can share their gifts and talents in the praise and worship ministry of our Lord.';
+        $view->description = 'We seek to share the love of Jesus by offering a variety of ways in which members and participants can share their gifts and talents in the praise and worship ministry of our Lord.';
         return $view;
     }
 
