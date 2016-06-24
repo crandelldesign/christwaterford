@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'matt@crandelldesign.com', 'name' => 'CLC Admin'],
+    'from' => ['address' => 'postmaster@christwaterford.org', 'name' => 'CLC Admin'],
 
     /*
     |--------------------------------------------------------------------------

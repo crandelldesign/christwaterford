@@ -50,15 +50,15 @@
     </div>
     <div class="col-sm-6">
         <h2 class="margin-top-0">You will find us at</h2>
-        <div itemscope itemtype="http://schema.org/LocalBusiness">
+        <address itemscope itemtype="http://schema.org/LocalBusiness">
             <div itemprop="address" typeof="PostalAddress">
-                <p><span itemprop="streetAddress">5987 Williams Lake Road</span><br>
+                <p><span itemprop="streetAddress">5987 Williams Lake Rd</span><br>
                     (at Airport Road, one mile west of Dixie Highway)<br>
                     <span itemprop="addressLocality">Waterford</span>, <span itemprop="addressRegion">MI</span> <span itemprop="postalCode">48329</span></p>
             </div>
         
             <p itemprop="telephone"><a href="tel:+12486737331">248-673-7331</a></p>
-        </div>
+        </address>
 
         <div class="embed-responsive embed-responsive-4by3">
         <iframe class="embed-responsive-item iframe-map" width="440" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Christ+Lutheran+Church,+Williams+Lake+Road,+Waterford+Township,+MI&amp;aq=2&amp;oq=Chirst+Lutheran+Chuc&amp;sll=45.00109,-86.270553&amp;sspn=11.201376,22.565918&amp;t=m&amp;ie=UTF8&amp;hq=Christ+Lutheran+Church,&amp;hnear=Williams+Lake+Rd,+Waterford+Township,+Oakland,+Michigan&amp;cid=11776608453108580091&amp;ll=42.697324,-83.407946&amp;spn=0.022078,0.030899&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>

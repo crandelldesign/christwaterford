@@ -265,7 +265,7 @@ class HomeController extends Controller
         Mail::send('emails.contact', $data, function($message) use ($request)
         {
             $message->to('revjohnneg@christwaterford.org', 'Pastor John Negele');
-            $message->from('matt@crandelldesign.com', 'CLC Admin');
+            //$message->from('matt@crandelldesign.com', 'CLC Admin');
             $message->replyTo($request->get('email'), $request->get('name'));
             $message->subject('You\'ve Been Contacted by the Christ Lutheran Church Website.');
         });

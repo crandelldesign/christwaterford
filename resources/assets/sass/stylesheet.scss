@@ -49,10 +49,22 @@ body {
     @media (min-width: $screen-sm-min) {
         /*margin-left: 200px;*/
         position: relative;
-        z-index: 30;
+        z-index: 40;
     }
     .logo {
         max-width: 850px;
+    }
+    address.address {
+        margin-top: 30px;
+        font-weight: 600;
+        color: #FFF;
+        @media (min-width: $screen-md-min) {
+            margin-top: 50px;
+        }
+        a {
+            color: #FFF;
+            text-decoration: none;
+        }
     }
     .sidebar-toggle {
         -webkit-transition: all 0.3s;
@@ -112,7 +124,7 @@ body {
     box-shadow: $side-z2-shadow;
     background-color: $darkblue;
     padding: 15px 0;
-    z-index: 20;
+    z-index: 30;
     @media (min-width: $screen-sm-min) {
         top: 0;
         left: 0;

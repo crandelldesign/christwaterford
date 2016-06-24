@@ -19,15 +19,17 @@
 
 <div class="row">
     <div class="col-sm-6">
+        <div class="visible-xs-block">
         <h2>You will find us at</h2>
-        <p itemscope itemtype="http://schema.org/LocalBusiness">
+        <address itemscope itemtype="http://schema.org/LocalBusiness">
             <div itemprop="address" typeof="PostalAddress">
-                <p><span itemprop="streetAddress">5987 Williams Lake Road</span><br>
+                <p><span itemprop="streetAddress">5987 Williams Lake Rd</span><br>
                     (at Airport Road, one mile west of Dixie Highway)<br>
                     <span itemprop="addressLocality">Waterford</span>, <span itemprop="addressRegion">MI</span> <span itemprop="postalCode">48329</span></p>
             </div>
-        </p>
+        </address>
         <p>Go to the <a href="{{url('/contact')}}">Contact Us</a> page for more information and a map.</p>
+        </div>
 
         <h2>Sunday Services</h2>
         <p>We worship at 10:00 AM on Sundays</p>
