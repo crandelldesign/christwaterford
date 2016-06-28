@@ -7,6 +7,11 @@
 	<div class="col-md-8">
 		<p>See our worship services live right here! You can also view recent past services in case you missed them live.</p>
 
+		<h2>Lutheran Worship 7-3-16</h2>
+		<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" id="ls_embed_1467071383" src="//livestream.com/accounts/8727672/events/5698322/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"></iframe>
+		</div>
+
 		<h2>Lutheran Worship 6-26-16</h2>
 		<div class="embed-responsive embed-responsive-16by9">
 		<iframe class="embed-responsive-item" id="ls_embed_1466428168" src="//livestream.com/accounts/8727672/events/5645145/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"></iframe>
@@ -25,11 +30,6 @@
 		<h2>Lutheran Worship 5-29-16</h2>
 		<div class="embed-responsive embed-responsive-16by9">
 		<iframe class="embed-responsive-item" id="ls_embed_1464020653" src="//livestream.com/accounts/8727672/events/5453314/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"></iframe>
-		</div>
-
-		<h2>Lutheran Worship 5-15-16</h2>
-		<div class="embed-responsive embed-responsive-16by9">
-		<iframe class="embed-responsive-item" id="ls_embed_1463094283" src="//livestream.com/accounts/8727672/events/5380344/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"></iframe>
 		</div>
 
 		<!--<h2>Richard Nelson Memorial Service</h2>
