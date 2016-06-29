@@ -386,6 +386,18 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
     }
 }
 
+/* Image Gallery */
+.gallery {
+    a.thumbnail {
+        &:hover, &:focus, &.active {
+            border-color: $greenblue;
+        }
+        img {
+            max-width: 150px;
+        }
+    }
+}
+
 /* Events */
 .calendar-page {
     position: relative;

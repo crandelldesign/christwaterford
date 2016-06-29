@@ -18,12 +18,100 @@
         <li class="{{(isset($page)&&$page == 4)?'active':''}}">
             <a href="{{url('/faces/4')}}">Page 4</a>
         </li>
+        <li class="{{(isset($page)&&$page == 5)?'active':''}}">
+            <a href="{{url('/faces/5')}}">Page 5</a>
+        </li>
     </ul>
 </nav>
 
 @if(!isset($page) || $page == 1)
 
-<div class="row gallery" data-featherlight-gallery data-featherlight-filter="a">
+<div class="row gallery">
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-1.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-1.jpg" alt="2016 Image 1">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-2.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-2.jpg" alt="2016 Image 2">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-3.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-3.jpg" alt="2016 Image 3">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-4.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-4.jpg" alt="2016 Image 4">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-5.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-5.jpg" alt="2016 Image 5">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-6.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-6.jpg" alt="2016 Image 6">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-7.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-7.jpg" alt="2016 Image 7">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-8.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-8.jpg" alt="2016 Image 8">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-9.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-9.jpg" alt="2016 Image 9">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-10.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-10.jpg" alt="2016 Image 10">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-11.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-11.jpg" alt="2016 Image 11">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-12.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-12.jpg" alt="2016 Image 12">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-13.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-13.jpg" alt="2016 Image 13">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-14.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-14.jpg" alt="2016 Image 14">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-15.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-15.jpg" alt="2016 Image 15">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/image-2016-16.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/image-2016-16.jpg" alt="2016 Image 16">
+        </a>
+    </div>
+</div>
+
+@elseif(isset($page)&&$page == 2)
+
+<div class="row gallery">
     <div class="col-lg-3 col-xs-6 thumb">
          <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/childrens-serman.jpg">
             <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/childrens-serman.jpg" alt="childrens-serman">
@@ -106,7 +194,7 @@
     </div>
 </div>
 
-@elseif(isset($page)&&$page == 2)
+@elseif(isset($page)&&$page == 3)
 
 <div class="row gallery" data-featherlight-gallery data-featherlight-filter="a">
     <div class="col-lg-3 col-xs-6 thumb">
@@ -191,7 +279,7 @@
     </div>
 </div>
 
-@elseif(isset($page)&&$page == 3)
+@elseif(isset($page)&&$page == 4)
 
 <div class="row gallery" data-featherlight-gallery data-featherlight-filter="a">
     <div class="col-lg-3 col-xs-6 thumb">
@@ -276,7 +364,7 @@
     </div>
 </div>
 
-@elseif(isset($page)&&$page == 4)
+@elseif(isset($page)&&$page == 5)
 
 <div class="row gallery" data-featherlight-gallery data-featherlight-filter="a">
     <div class="col-lg-3 col-xs-6 thumb">
