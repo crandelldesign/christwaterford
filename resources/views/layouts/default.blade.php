@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        @include('layouts.head')
+    </head>
+    <body>
+        @include('layouts.header')
+        <div class="container-fluid page">
+            @include('layouts.nav')
+            <div class="content">
+                @yield('content')
+            </div>
+        </div>
+
+        <script type="text/javascript" src="{{ elixir('js/default.js') }}"></script>
+        @include('layouts.footer')
+        @yield('scripts')
+    </body>
+    
+</html>
