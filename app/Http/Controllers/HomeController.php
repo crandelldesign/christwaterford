@@ -170,6 +170,15 @@ class HomeController extends Controller
         return $view;
     }
 
+    public function ministries()
+    {
+        $view = view('home.ministries');
+        $view->active_page = 'teams';
+        $view->title = 'Ministries and Teams';
+        $view->description = 'Ministries and teams of Chirst Lutheran Church of Waterford.';
+        return $view;
+    }
+
     public function ministriesWorshipMusic()
     {
         $view = view('home.ministries-worship-music');
