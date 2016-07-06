@@ -9,13 +9,13 @@
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
-    <script src="{{url('/')}}/js/html5shiv.min.js"></script>
-    <script src="{{url('/')}}/js/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <style>
     </style>
 <![endif]-->
 
-<!--<link rel="apple-touch-icon" sizes="57x57" href="{{url('/')}}/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="57x57" href="{{url('/')}}/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="{{url('/')}}/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="{{url('/')}}/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="{{url('/')}}/apple-icon-76x76.png">
@@ -29,8 +29,8 @@
 <link rel="icon" type="image/png" sizes="96x96" href="{{url('/')}}/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="{{url('/')}}/favicon-16x16.png">
 <link rel="manifest" href="{{url('/')}}/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileColor" content="#8b8c84">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">-->
+<meta name="theme-color" content="#8b8c84">
 
 @yield('head')
