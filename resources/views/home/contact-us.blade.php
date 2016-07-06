@@ -27,19 +27,19 @@
 
         <p>Fill out to the form below to send an email to Pastor John.</p>
         <form class="form" action="{{url('/contact')}}" method="post">
-            <div class="form-group">
+            <div class="form-group {{(count($errors) > 0 && $errors->first('name'))?'has-error':''}}">
                 <label for="name" class="sr-only">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required" value="{{old('name')}}">
             </div>
-            <div class="form-group">
+            <div class="form-group {{(count($errors) > 0 && $errors->first('email'))?'has-error':''}}">
                 <label for="email" class="sr-only">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required" value="{{old('email')}}">
             </div>
-            <div class="form-group">
+            <div class="form-group {{(count($errors) > 0 && $errors->first('message'))?'has-error':''}}">
                 <label for="message" class="sr-only">Message</label>
-                <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
+                <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message">{{old('message')}}</textarea>
             </div>
-            <div class="control-group form-group {{(count($errors) > 0 && $errors->first('name'))?'has-error':''}}">
+            <div class="control-group form-group {{(count($errors) > 0 && $errors->first('g-recaptcha-response'))?'has-error':''}}">
                 <div class="g-recaptcha" data-sitekey="6LcyXiMTAAAAADBTJ-YbGh2MNid-cmArBJ_Apd_Y"></div>
             </div>
             <div class="form-group">
