@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use christwaterford\Http\Requests;
 use christwaterford\Http\Controllers\Controller;
+use Analytics;
 use Auth;
 use Cache;
 use Response;
@@ -38,6 +39,8 @@ class ApiController extends Controller
             $event->ends_at_date_formatted = date('n/j/Y',strtotime($event->ends_at));
             $event->ends_at_time_formatted = date('g:ia',strtotime($event->ends_at));
         }
+
+        Analytics::trackEvent('Calendar Click', 'click', 'Calandar Events Loaded', 1);
 
         return json_encode($events);
     }

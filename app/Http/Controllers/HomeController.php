@@ -5,6 +5,7 @@ namespace christwaterford\Http\Controllers;
 use Illuminate\Http\Request;
 
 use christwaterford\Http\Controllers\Controller;
+use Analytics;
 use Auth;
 use Cache;
 use Mail;
@@ -269,6 +270,8 @@ class HomeController extends Controller
             $message->replyTo($request->get('email'), $request->get('name'));
             $message->subject('You\'ve Been Contacted by the Christ Lutheran Church Website.');
         });
+
+        Analytics::trackEvent('Email', 'sent', 'Email Sent', 1);
 
         return redirect('/contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
     }
