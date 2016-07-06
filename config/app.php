@@ -144,6 +144,7 @@ return [
         christwaterford\Providers\AuthServiceProvider::class,
         christwaterford\Providers\EventServiceProvider::class,
         christwaterford\Providers\RouteServiceProvider::class,
+        Ipunkt\LaravelAnalytics\AnalyticsServiceProvider::class,
 
     ],
 
@@ -192,6 +193,7 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Analytics' => Ipunkt\LaravelAnalytics\AnalyticsFacade::class,
 
     ],
 

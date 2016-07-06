@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         @include('layouts.head')
+        {!! Analytics::render() !!}
     </head>
     <body>
         @include('layouts.header')
