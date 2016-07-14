@@ -31,6 +31,7 @@
 								<th>End</th>
 								<th>&nbsp;</th>
 								<th>&nbsp;</th>
+							</tr>
 						</thead>
 						<tbody>
 						@foreach($events as $event)
