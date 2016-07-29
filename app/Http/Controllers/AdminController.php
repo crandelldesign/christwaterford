@@ -47,8 +47,8 @@ class AdminController extends Controller
         if (empty($event))
             return redirect('/admin/events/'.$request->get('event_id'))->with('not_found','There was an error saving the event. Please reload and try again.');
 
-        $starts_at = strtotime($request->get('event_date').' '.$request->get('start_time'));
-        $ends_at = strtotime($request->get('event_date').' '.$request->get('end_time'));
+        $starts_at = strtotime($request->get('event_date').' '.(($request->get('is_all_day'))?'12:00 AM':$request->get('start_time')));
+        $ends_at = strtotime($request->get('event_date').' '.(($request->get('is_all_day'))?'11:59 PM':$request->get('end_time')));
         $event->name = $request->get('event_name');
         $event->slug = $this->toAscii($request->get('event_name'));
         $event->starts_at = date('Y-m-d H:i:s', $starts_at);
