@@ -29,8 +29,8 @@ class ApiController extends Controller
         $tomorrow = strtotime('+1 day', $date);
         $events = CalendarEvent::where('starts_at','>=',date("Y-m-d H:i:s", $date))
             ->where('starts_at','<',date("Y-m-d H:i:s", $tomorrow))
+            ->orderBy('is_all_day','desc')
             ->orderBy('starts_at')
-            ->orderBy('is_all_day')
             ->get();
 
         foreach ($events as $event) {

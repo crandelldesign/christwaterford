@@ -117,8 +117,8 @@ class HomeController extends Controller
 
         $events = CalendarEvent::where('starts_at','>=',date('Y-m-d H:i:s', $first_day_of_the_month))
                 ->where('starts_at','<',date('Y-m-d H:i:s', $next_month))
+                ->orderBy('is_all_day','desc')
                 ->orderBy('starts_at')
-                ->orderBy('is_all_day')
                 ->get();
 
         $month = new StdClass;
@@ -150,8 +150,8 @@ class HomeController extends Controller
                 $tomorrow = strtotime('+1 day', $phpdate);
                 $events = CalendarEvent::where('starts_at','>=',date("Y-m-d H:i:s", $phpdate))
                     ->where('starts_at','<',date("Y-m-d H:i:s", $tomorrow))
+                    ->orderBy('is_all_day','desc')
                     ->orderBy('starts_at')
-                    ->orderBy('is_all_day')
                     ->get();
 
                 foreach ($events as $event) {
