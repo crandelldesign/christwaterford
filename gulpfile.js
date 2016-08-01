@@ -52,7 +52,7 @@ elixir(function(mix) {
     // Build JS
     mix.scripts(
         [
-            'jquery-2.2.1.js',
+            'jquery-3.1.0.min.js',
             'bootstrap/bootstrap.js',
             'handlebars/handlebars.js',
             'moment/moment.min.js',
@@ -64,7 +64,7 @@ elixir(function(mix) {
     // Build Admin JS
     mix.scripts(
         [
-            'jquery-2.2.1.js',
+            'jquery-3.1.0.min.js',
             'moment/moment.min.js',
             'bootstrap/bootstrap.js',
             'adminlte/app.js',
@@ -85,5 +85,4 @@ elixir(function(mix) {
     // Copy Fonts and Images for Build Numbers
     mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/build/fonts/bootstrap');
     mix.copy('node_modules/font-awesome/fonts', 'public/build/fonts');
-    mix.copy('public/img', 'public/build/img');
 });
