@@ -78,7 +78,7 @@ class HomeController extends Controller
         return $view;
     }
 
-    public function getEvents(Request $request, $month_year = null)
+    public function getEvents(Request $request, $month_year = null, $simple = false)
     {
         if ($month_year)
         {
@@ -87,15 +87,17 @@ class HomeController extends Controller
         } else {
             $date = time();
         }
-        $prev_month = strtotime('-1 month', $date);
-        $next_month = strtotime('+1 month', $date);
+        $prev_month = strtotime('first day of -1 month', $date);
+        $next_month = strtotime('first day of +1 month', $date);
         $today = getdate();
         $first_day_of_the_month = strtotime(date('F', $date).' 1, '.date('Y', $date));
         $last_day_of_the_month = strtotime(date('F', $date).' '.date('t', $date).', '.date('Y', $date));
 
-        $view = view('home.events');
+        if (!$simple)
+            $view = view('home.events');
+        else
+            $view = view('home.events-simple');
         $view->active_page = 'events';
-        //$view->title = date('F Y',$date).' Events';
         $view->title = 'Events';
 
         $view->current_date = time();
@@ -141,7 +143,6 @@ class HomeController extends Controller
             }
         }
         $view->month = $month;
-
 
         if ($request->get('event')) {
             $event = CalendarEvent::find($request->get('event'));
