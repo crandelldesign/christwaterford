@@ -65,6 +65,7 @@ elixir(function(mix) {
     mix.scripts(
         [
             'jquery-3.1.0.min.js',
+            'jquery-migrate-3.0.0.min.js',
             'moment/moment.min.js',
             'bootstrap/bootstrap.js',
             'adminlte/app.js',
