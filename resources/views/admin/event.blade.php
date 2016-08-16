@@ -39,7 +39,7 @@
 					    	<label class="control-label col-sm-3">Event Date</label>
 					    	<div class="col-sm-5">
 						    	<div class="input-group date" id="event_date_group">
-						    		<input class="form-control"id="event_date" name="event_date" type="text" placeholder="##/##/####" value="{{old('event_date')?old('event_date'):(isset($event)?date('m/d/Y', strtotime($event->starts_at)):'')}}">
+						    		<input class="form-control" id="event_date" name="event_date" type="text" placeholder="##/##/####" value="{{old('event_date')?old('event_date'):(isset($event)?date('m/d/Y', strtotime($event->starts_at)):'')}}">
 						    		<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 								</div>
 							</div>

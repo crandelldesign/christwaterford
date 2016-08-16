@@ -64,8 +64,7 @@ elixir(function(mix) {
     // Build Admin JS
     mix.scripts(
         [
-            'jquery-3.1.0.min.js',
-            'jquery-migrate-3.0.0.min.js',
+            'jquery-2.2.4.min.js',
             'moment/moment.min.js',
             'bootstrap/bootstrap.js',
             'adminlte/app.js',
