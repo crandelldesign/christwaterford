@@ -77,17 +77,17 @@
                     <h1>Typography</h1>
 
                     <h1>Heading 1</h1>
-                    <p class="details">Font: EB Garamond #003366</p>
+                    <p class="details">Font: EB Garamond / Midnight Blue #003366</p>
 
                     <hr>
 
                     <h2>Heading 2</h2>
-                    <p class="details">Font: Open Sans Semibold #00746b</p>
+                    <p class="details">Font: Open Sans Semibold / Pine Green #00746b</p>
 
                     <hr>
 
                     <h3>Heading 3</h3>
-                    <p class="details">Font: Open Sans Regular #252525</p>
+                    <p class="details">Font: Open Sans Regular / Black #252525</p>
 
                     <hr>
 
@@ -97,7 +97,7 @@
 
                     <p><a href="#">This is a link</a> - <a href="#" class="hover">This is a hover link</a></p>
 
-                    <p class="details">Font: Open Sans Regular #252525</p>
+                    <p class="details">Font: Open Sans Regular / Black #252525</p>
                 </div>
             </div>
         </div>
