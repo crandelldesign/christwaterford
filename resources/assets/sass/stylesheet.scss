@@ -40,7 +40,7 @@ body {
 
 /* Header */
 .header {
-    background-color: $darkblue;
+    background-color: $midnightblue;
     @include shadow-2();
     > .container-fluid {
         @include page-width();
@@ -78,7 +78,7 @@ body {
         padding: 8px 8px;
         margin-right: 15px;
         border: 1px solid #FFF;
-        background-color: $darkblue;
+        background-color: $midnightblue;
         color: #FFF;
         border-radius: 4px;
         width: 83px;
@@ -122,7 +122,7 @@ body {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     box-shadow: $side-z2-shadow;
-    background-color: $darkblue;
+    background-color: $midnightblue;
     padding: 15px 0;
     z-index: 30;
     @media (min-width: $screen-sm-min) {
@@ -170,7 +170,7 @@ body {
 /* Default Styles */
 h1 {
     font-family: 'EB Garamond', serif;
-    color: $darkblue;
+    color: $midnightblue;
     //font-size: 40px;
     @media (min-width: $screen-sm-min) {
         font-size: 45px;
@@ -179,10 +179,10 @@ h1 {
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    color: $darkgreenblue;
+    color: $pinegreen;
 }
 a {
-    color: $greenblue;
+    color: $persiangreen;
     &:hover, &.hover, &:focus {
         color: $gray;
         text-decoration: none;
@@ -192,11 +192,11 @@ a {
     @include shadow-1();
 }
 .btn-blue {
-    background-color: $darkblue;
+    background-color: $midnightblue;
     color: #FFF;
     border: 1px solid #FFF;
     &:hover {
-        background-color: lighten($darkblue, 5);
+        background-color: lighten($midnightblue, 5);
         color: #FFF;
     }
     &:focus {
@@ -204,11 +204,11 @@ a {
     }
 }
 .btn-darkgreenblue {
-    background-color: $darkgreenblue;
+    background-color: $pinegreen;
     color: #FFF;
     border: 1px solid #FFF;
     &:hover {
-        background-color: lighten($darkgreenblue, 5);
+        background-color: lighten($pinegreen, 5);
         color: #FFF;
     }
     &:focus {
@@ -219,11 +219,11 @@ a {
     background-color: #FFF;
     border: 1px solid #FFF;
     &:hover {
-        color: $greenblue;
+        color: $persiangreen;
         background-color: lighten($gray, 40);
     }
     &:focus {
-        color: $greenblue;
+        color: $persiangreen;
     }
 }
 /* Spacing Elements */
@@ -248,7 +248,7 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
     .modal-content {
         overflow: hidden;
         .modal-header {
-            background-color: $darkblue;
+            background-color: $midnightblue;
             .modal-title {
                 color: #FFF;
             }
@@ -302,7 +302,7 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
 
 /* Style Guide Header */
 .style-header {
-    background-color: $darkblue;
+    background-color: $midnightblue;
     > .container-fluid {
         @include page-width();
         padding: 15px;
@@ -321,19 +321,19 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
     color: #FFF;
     background-color: #eee;
     &.swatch1 {
-        background-color: $darkblue;
+        background-color: $midnightblue;
     }
     &.swatch2 {
-        background-color: $greenblue;
+        background-color: $persiangreen;
     }
     &.swatch3 {
         background-color: $gray;
     }
     &.swatch4 {
-        background-color: $darkgreenblue;
+        background-color: $pinegreen;
     }
     &.swatch5 {
-        background-color: $greenblue2;
+        background-color: $lightseagreen;
     }
     &.swatch6 {
         background-color: $black;
@@ -390,7 +390,7 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
 .gallery {
     a.thumbnail {
         &:hover, &:focus, &.active {
-            border-color: $greenblue;
+            border-color: $persiangreen;
         }
         img {
             max-width: 150px;
@@ -453,7 +453,7 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
                     max-width: none;
                 }
                 &:hover {
-                    color: $greenblue;
+                    color: $persiangreen;
                 }
             }
         }
@@ -468,7 +468,7 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
                 position: absolute;
                 left: 10px;
                 @include rotate-icon();
-                color: $darkgreenblue;
+                color: $pinegreen;
             }
             .more-info {
                 font-size: 12px;

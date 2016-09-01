@@ -26,13 +26,13 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="color-swatch swatch1">
-                                Dark Blue<br>
+                                Midnight Blue<br>
                                 #003366
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="color-swatch swatch2">
-                                Green Blue<br>
+                                Persian Green<br>
                                 #00a99d
                             </div>
                         </div>
@@ -44,13 +44,13 @@
                         </div>
                         <div class="col-md-4">
                             <div class="color-swatch swatch4">
-                                Dark Green Blue<br>
+                                Pine Green<br>
                                 #00746b
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="color-swatch swatch5">
-                                Green Blue 2<br>
+                                Light Sea Green<br>
                                 #1cbbb4
                             </div>
                         </div>

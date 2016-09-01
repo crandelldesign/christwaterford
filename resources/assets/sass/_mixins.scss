@@ -50,7 +50,7 @@
 }
 
 @mixin sidebar-active() {
-    background-color: lighten($darkblue, 5);
+    background-color: lighten($midnightblue, 5);
 }
 
 @mixin sidebar-child-active() {
