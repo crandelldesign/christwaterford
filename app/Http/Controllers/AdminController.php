@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use christwaterford\Http\Requests;
 use christwaterford\Http\Controllers\Controller;
-
+use Auth;
 use christwaterford\CalendarEvent;
 
 class AdminController extends Controller
@@ -57,6 +57,7 @@ class AdminController extends Controller
         $event->is_featured = ($request->get('is_featured'))?1:0;
         $event->is_all_day = ($request->get('is_all_day'))?1:0;
         $event->description = $request->get('description');
+        $event->user_id = Auth::user()->id;
         $event->save();
 
         if ($request->get('add_another'))
@@ -94,7 +95,7 @@ class AdminController extends Controller
         if (!$id)
             return redirect('/admin/events');
 
-        $event = CalendarEvent::find($id);    
+        $event = CalendarEvent::find($id);
         $event->delete();
 
         return redirect('/admin/events')->with('success','Event deleted successfully.');
