@@ -73,7 +73,7 @@
         {
             $('.slideshow').slick('slickPause');
         });
-        ('.slideshow').on('swipe', function(event, slick, direction){
+        $('.slideshow').on('swipe', function(event, slick, direction){
             $('.slideshow').slick('slickPause');
         });
     });
