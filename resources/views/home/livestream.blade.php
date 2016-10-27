@@ -6,7 +6,7 @@
 
 <div class="row">
     <div class="col-md-8">
-        <p>See our worship services live right here! You can also view recent past services in case you missed them live.</p>
+        <p>See our worship services live right here! You can also view recent past services in case you missed them.</p>
 
         <h2>Lutheran Worship 10-23-16</h2>
         <div class="embed-responsive embed-responsive-16by9">
