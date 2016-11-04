@@ -34,10 +34,10 @@
         </div>
         </div>
 
-        <!--<h2>Richard Nelson Memorial Service</h2>
+        {{--<!--<h2>Richard Nelson Memorial Service</h2>
         <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="http://livestream.com/accounts/8727672/events/4739826/player?width=560&height=315&autoPlay=true&mute=false" width="560" height="315" frameborder="0" scrolling="no"> </iframe>
-        </div>-->
+        </div>-->--}}
     </div>
 </div>
 
