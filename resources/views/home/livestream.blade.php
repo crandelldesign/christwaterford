@@ -9,6 +9,7 @@
         <p>See our worship services live right here! You can also view recent past services in case you missed them.</p>
 
         <h2>Lutheran Worship 12-24-16</h2>
+        <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" id="ls_embed_1482204781" src="https://livestream.com/accounts/8727672/events/6781079/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
         </div>
 
