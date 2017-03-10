@@ -10,6 +10,11 @@
 
         <h2>Lutheran Worship 3-5-17</h2>
         <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" id="ls_embed_1488908134" src="https://livestream.com/accounts/8727672/events/7104339/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
+        </div>
+
+        <h2>Lutheran Worship 3-5-17</h2>
+        <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" id="ls_embed_1488200680" src="https://livestream.com/accounts/8727672/events/7069909/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
         </div>
 
@@ -26,11 +31,6 @@
         <h2>Lutheran Worship 2-5-17</h2>
         <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" id="ls_embed_1485729603" src="https://livestream.com/accounts/8727672/events/6947691/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
-        </div>
-
-        <h2>Lutheran Worship 1-29-17</h2>
-        <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" id="ls_embed_1485264627" src="https://livestream.com/accounts/8727672/events/6922791/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
         </div>
 
         {{--<!--<h2>Richard Nelson Memorial Service</h2>
