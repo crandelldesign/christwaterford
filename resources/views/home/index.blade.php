@@ -5,7 +5,7 @@
 @stop
 
 @section('content')
-     
+
 <h1>What makes a church special?</h1>
 <h2>It's people like you!</h2>
 
@@ -38,7 +38,8 @@
         <p>We also have special service times during the Christmas and the Lenten/Easter season as well as Thanksgiving eve.</p>
         <p>You will find that we have a "blended" service, incorporating some traditional Lutheran liturgy, bible readings, prayer, children's message and sermon along with lots of opportunities for congregational singing, incorporating both traditional and contemporary songs with the Chancel Choir, Chapel Bell Choir and soloists often contributing to the service. We have open communion every Sunday and all believing Christians are welcome to commune.</p>
         <h2>Our Mission</h2>
-        <p>We are a community of God's people called to share the love of God as made known in Jesus Christ and to be transformed by that love.</p>
+        <p>Made new in Christ, we share the unconditional love of God with each other and the community.<br>
+            We go forward without fear, open to differences, serving a changing world.</p>
     </div>
     <div class="col-sm-6">
         <h2>Upcoming Events</h2>
