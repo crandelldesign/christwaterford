@@ -125,7 +125,7 @@ class HomeController extends Controller
 
         $month = new StdClass;
         for ($d = 1; $d <= date('t',$date); $d++)
-        {   
+        {
             $month->dates[$d] = new StdClass;
             $day = strtotime(date('F', $date).' '.$d.', '.date('Y', $date));
             $next_day = strtotime('+1 day', $day);
@@ -276,7 +276,7 @@ class HomeController extends Controller
         Mail::send('emails.contact', $data, function($message) use ($request)
         {
             $message->to('revjohnneg@christwaterford.org', 'Pastor John Negele');
-            //$message->from('matt@crandelldesign.com', 'CLC Admin');
+            $message->cc('matt@crandelldesign.com', 'Matt Crandell');
             $message->replyTo($request->get('email'), $request->get('name'));
             $message->subject('You\'ve Been Contacted by the Christ Lutheran Church Website.');
         });
