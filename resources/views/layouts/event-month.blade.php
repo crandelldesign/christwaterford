@@ -30,11 +30,13 @@
                     @if(isset($dates->events))
                     @foreach ($dates->events as $event)
                     @if (isset($event->name))
-                    <a class="cal-event" data-event_id="{{$event->id}}">
-                        <span class="event-title">{{$event->name}}</span>
+                    <a class="cal-event" data-event_id="{{$event->id}}" itemscope itemtype="http://schema.org/Event">
+                        <span class="event-title" itemprop="name">{{$event->name}}</span>
                         @if(!$event->is_all_day)
                         <br>
-                        {{date('g:ia',strtotime($event->starts_at))}} @if($event->is_has_ends_at) - {{date('g:ia',strtotime($event->ends_at))}} @endif
+                        <span itemprop="startDate" content="{{date('Y-m-d\TH:i',strtotime($event->starts_at))}}">{{date('g:ia',strtotime($event->starts_at))}}</span> @if($event->is_has_ends_at) - <span itemprop="endDate" content="{{date('Y-m-d\TH:i',strtotime($event->ends_at))}}">{{date('g:ia',strtotime($event->ends_at))}}</span> @endif
+                        @else
+                        <span itemprop="startDate" content="{{date('Y-m-d',strtotime($event->starts_at))}}"></span>
                         @endif
                     </a>
                     @endif
