@@ -295,4 +295,59 @@ class HomeController extends Controller
         return $view;
     }
 
+    public function getVacationBibleSchool()
+    {
+        $view = view('home.vacation-bible-school');
+        $view->active_page = 'vacation-bible-school';
+        $view->title = 'Vacation Bible School';
+        $view->description = '';
+        return $view;
+    }
+
+    public function postVacationBibleSchool(Request $request)
+    {
+        $validator = $this->validate(
+            $request,
+            [
+                'students_name' => 'required',
+                'grade_completed' => 'required',
+                'address' => 'required',
+                'city' => 'required',
+                'state' => 'required',
+                'zip' => 'required',
+                'phone' => 'required',
+                'email' => 'required|email',
+                'emergency_contact' => 'required',
+                'relationship' => 'required',
+                'emergency_contact_phone' => 'required',
+                'signed' => 'required',
+                'dated' => 'required',
+                'g-recaptcha-response' => 'required|recaptcha',
+            ],
+            [
+                'students_name.required' => 'Enter the Student\'s name.',
+                'grade_completed.required' => 'Enter the grade complated by the student.',
+                'phone.required' => 'Please enter your phone number.',
+                'email.required' => 'Please enter your email address.',
+                'email.email' => 'Please enter a valid email address.',
+                'emergency_contact.required' => 'Enter the emergency contact.',
+                'emergency_contact_phone.required' => 'Enter the emergency contact\'s phone number.',
+                'signed.required' => 'Enter your full name to sign the form.',
+                'g-recaptcha-response.required' => 'Please check the ReCapctha checkbox.'
+            ]
+        );
+
+        Mail::send('emails.vacation-bible-school', ['inputs' => $request->all()], function($message) use ($request)
+        {
+            $message->to('Info@christwaterford.org', 'CLC Info');
+            $message->bcc('matt@crandelldesign.com', 'Matt Crandell');
+            $message->replyTo($request->get('email'), $request->get('name'));
+            $message->subject('Vacation Bible School Submission');
+        });
+
+        Analytics::trackEvent('Email', 'sent', 'Vacation Bible School Form Submitted', 1);
+
+        return redirect('/vacation-bible-school')->with('status', 'Thank you for submitting your form, we look forward to seeing you.');
+    }
+
 }
