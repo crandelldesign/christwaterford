@@ -5,7 +5,7 @@
 @stop
 
 @section('content')
-       
+
 <h1>Now let us hear from you.</h1>
 <div class="row">
     <div class="col-sm-6">
@@ -40,7 +40,7 @@
                 <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message">{{old('message')}}</textarea>
             </div>
             <div class="control-group form-group {{(count($errors) > 0 && $errors->first('g-recaptcha-response'))?'has-error':''}}">
-                <div class="g-recaptcha" data-sitekey="6LcyXiMTAAAAADBTJ-YbGh2MNid-cmArBJ_Apd_Y"></div>
+                <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITEKEY') }}"></div>
             </div>
             <div class="form-group">
                 {!! csrf_field() !!}
@@ -56,7 +56,7 @@
                     (at Airport Road, one mile west of Dixie Highway)<br>
                     <span itemprop="addressLocality">Waterford</span>, <span itemprop="addressRegion">MI</span> <span itemprop="postalCode">48329</span></p>
             </div>
-        
+
             <p itemprop="telephone"><a href="tel:+12486737331">248-673-7331</a></p>
         </address>
 
