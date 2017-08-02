@@ -146,7 +146,7 @@
         </div>
     </div>
     <p>By signing this registration form you agree that any photographs taken of yur child at or during this event are the property of Christ Lutheran Church and may be used in future publications as deemed appropriate.</p>
-    <div class="control-group form-group {{(count($errors) > 0 && $errors->first('g-recaptcha-response'))?'has-error':''}}">
+    <!--{{--<div class="control-group form-group {{(count($errors) > 0 && $errors->first('g-recaptcha-response'))?'has-error':''}}">
         <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITEKEY') }}"></div>
         @foreach ($errors->get('g-recaptcha-response') as $error)
             <div class="help-block with-errors">{{ $error }}</div>
@@ -154,7 +154,7 @@
         @foreach ($errors->get('recaptcha') as $error)
             <div class="help-block with-errors">{{ $error }}</div>
         @endforeach
-    </div>
+    </div>--}}-->
     <div class="form-group">
         {!! csrf_field() !!}
         <button type="submit" class="btn btn-blue btn-submit" formnovalidate>Submit</button>

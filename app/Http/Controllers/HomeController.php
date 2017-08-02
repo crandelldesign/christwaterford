@@ -322,7 +322,7 @@ class HomeController extends Controller
                 'emergency_contact_phone' => 'required',
                 'signed' => 'required',
                 'dated' => 'required',
-                'g-recaptcha-response' => 'required|recaptcha',
+                //'g-recaptcha-response' => 'required|recaptcha',
             ],
             [
                 'students_name.required' => 'Enter the Student\'s name.',
@@ -333,7 +333,7 @@ class HomeController extends Controller
                 'emergency_contact.required' => 'Enter the emergency contact.',
                 'emergency_contact_phone.required' => 'Enter the emergency contact\'s phone number.',
                 'signed.required' => 'Enter your full name to sign the form.',
-                'g-recaptcha-response.required' => 'Please check the ReCapctha checkbox.'
+                //'g-recaptcha-response.required' => 'Please check the ReCapctha checkbox.'
             ]
         );
 
