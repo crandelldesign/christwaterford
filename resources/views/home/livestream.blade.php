@@ -23,13 +23,6 @@
         </div>
 
         <div itemscope itemtype="http://schema.org/Event">
-        <h2 itemprop="name">Lutheran Worship <span itemprop="startDate" content="2017-09-10">9-10-17</span></h2>
-        <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" id="ls_embed_1504630679" src="https://livestream.com/accounts/8727672/events/7701544/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
-        </div>
-        </div>
-
-        <div itemscope itemtype="http://schema.org/Event">
         <h2 itemprop="name">Lutheran Worship <span itemprop="startDate" content="2017-09-03">9-3-17</span></h2>
         <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" id="ls_embed_1503378188" src="https://livestream.com/accounts/8727672/events/7668778/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
