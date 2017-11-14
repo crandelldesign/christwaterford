@@ -89,6 +89,41 @@
             <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/community-impact-sunday-8.jpg" alt="Community Impact Sunday 8">
         </a>
     </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/community-impact-sunday-9.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/community-impact-sunday-9.jpg" alt="Community Impact Sunday 9">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/community-impact-sunday-10.jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/community-impact-sunday-10.jpg" alt="Community Impact Sunday 10">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/community-impact-sunday-11jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/community-impact-sunday-11.jpg" alt="Community Impact Sunday 11">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/community-impact-sunday-12jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/community-impact-sunday-12.jpg" alt="Community Impact Sunday 12">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/community-impact-sunday-13jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/community-impact-sunday-13.jpg" alt="Community Impact Sunday 13">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/community-impact-sunday-14jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/community-impact-sunday-14.jpg" alt="Community Impact Sunday 14">
+        </a>
+    </div>
+    <div class="col-lg-3 col-xs-6 thumb">
+        <a class="thumbnail thumbnail-popup" href="{{url('/')}}/img/photos/community-impact-sunday-15jpg">
+            <img class="img-responsive center-block" src="{{url('/')}}/img/photos/cropped/community-impact-sunday-15.jpg" alt="Community Impact Sunday 15">
+        </a>
+    </div>
 </div>
 
 @elseif(isset($page)&&$page == 3)
