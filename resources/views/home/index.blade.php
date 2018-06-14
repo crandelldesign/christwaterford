@@ -7,7 +7,11 @@
 @section('content')
 
 <h1>What makes a church special?</h1>
+@if (strtotime('NOW') < strtotime('2018-08-12'))
+<h2><a href="{{url('/vacation-bible-school')}}">Click Here to Register for Vacation Bible School</a></h2>
+@else
 <h2>It's people like you!</h2>
+@endif
 
 <div class="slideshow">
     <div class="item"><img srcset="{{url('/img/slideshow/slideshow1@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow1.jpg')}}" alt="Christ Lutheran Church Congregation" class="img-responsive center-block"></div>
