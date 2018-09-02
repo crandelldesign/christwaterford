@@ -9,23 +9,20 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
     #RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
-    #RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+    RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
 
-    #RewriteCond %{HTTPS} !on
-    #RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTPS} !on
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
     # Note: It’s also recommended to enable HTTP Strict Transport Security (HSTS)
     # on your HTTPS website to help prevent man-in-the-middle attacks.
