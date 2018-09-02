@@ -5,15 +5,15 @@
 
     RewriteEngine On
 
+    RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
+    RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+
+    RewriteCond %{HTTPS} !on
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
-    # Force WWW:
-    RewriteCond %{HTTPS} !=on
-    RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-    RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
-    RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -24,17 +24,6 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-
-    #RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
-    #RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
-
-    #RewriteCond %{HTTPS} !on
-    #RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-
-    #RewriteCond %{HTTPS} !=on
-    #RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-    #RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
-    #RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # Note: It’s also recommended to enable HTTP Strict Transport Security (HSTS)
     # on your HTTPS website to help prevent man-in-the-middle attacks.
