@@ -10,10 +10,10 @@
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
     # Force WWW:
-    RewriteCond %{HTTP_HOST} !^$
-    RewriteCond %{HTTP_HOST} !^www\. [NC]
-    RewriteCond %{HTTPS}s ^on(s)|
-    RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+    RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
+    RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
