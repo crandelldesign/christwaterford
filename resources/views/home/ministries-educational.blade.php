@@ -43,6 +43,12 @@
         <h2>Adult Discussion Group</h2>
         <p>Discusses the thought of contemporary Christian theologians and the relevance of Christianity for the 21st Century. Meets on the third Sunday of the month at 6:30pm, during the school year.</p>
     </div>
+    <div>
+        <h2>Spiritual Class for Special Adults</h2>
+        <h3>2nd and 4th Wednesdays, 6 - 8pm</h3>
+
+        <p>This class offers fellowship and spiritual nurture for mentally challenged adults within our community. The time is filled with Bible study, crafts, music and a light snack. If you know someone who would benefit from this program please call the church office.</p>
+    </div>
 </div>
 
 <p>Watch for announcements regarding various other Bible Studies or educational programs and events that may be scheduled throughout the year.</p>
