@@ -45,11 +45,11 @@
     </div>
     <div>
         <h2>Spiritual Class for Special Adults</h2>
-        <h3>2nd and 4th Wednesdays, 6 - 8pm</h3>
-
-        <p>This class offers fellowship and spiritual nurture for mentally challenged adults within our community. The time is filled with Bible study, crafts, music and a light snack. If you know someone who would benefit from this program please call the church office.</p>
+        <p>This class offers fellowship and spiritual nurture for mentally challenged adults within our community on the 2nd and 4th Wednesdays of the month from 6:00 pm – 8:00 pm. The time is filled with Bible study, crafts, music and a light snack. If you know someone who would benefit from this program please call the church office.</p>
     </div>
 </div>
+
+<hr>
 
 <p>Watch for announcements regarding various other Bible Studies or educational programs and events that may be scheduled throughout the year.</p>
 
