@@ -9,6 +9,13 @@
         <p>See our worship services live right here! You can also view recent past services in case you missed them.</p>
 
         <div itemscope itemtype="http://schema.org/Event">
+            <h2 itemprop="name">Pastor John's Retirement <span itemprop="startDate" content="2018-11-18">11-18-18</span></h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" id="ls_embed_1542066286" src="https://livestream.com/accounts/8727672/events/8453069/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
+            </div>
+        </div>
+        
+        <div itemscope itemtype="http://schema.org/Event">
             <h2 itemprop="name">Pastor John's Retirement <span itemprop="startDate" content="2018-11-11">11-11-18</span></h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" id="ls_embed_1541375742" src="https://livestream.com/accounts/8727672/events/8442137/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
@@ -33,13 +40,6 @@
             <h2 itemprop="name">Lutheran Worship <span itemprop="startDate" content="2018-10-21">10-21-18</span></h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" id="ls_embed_1539648039" src="https://livestream.com/accounts/8727672/events/8415511/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
-            </div>
-        </div>
-
-        <div itemscope itemtype="http://schema.org/Event">
-            <h2 itemprop="name">Lutheran Worship <span itemprop="startDate" content="2018-10-14">10-14-18</span></h2>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" id="ls_embed_1539089560" src="https://livestream.com/accounts/8727672/events/8406390/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
             </div>
         </div>
 
