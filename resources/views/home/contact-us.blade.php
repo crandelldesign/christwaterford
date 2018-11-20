@@ -25,7 +25,7 @@
             </div>
         @endif
 
-        <p>Fill out to the form below to send an email to Pastor John.</p>
+        <p>Fill out to the form below to send an email to our Pastor.</p>
         <form class="form" action="{{url('/contact')}}" method="post">
             <div class="form-group {{(count($errors) > 0 && $errors->first('name'))?'has-error':''}}">
                 <label for="name" class="sr-only">Name</label>

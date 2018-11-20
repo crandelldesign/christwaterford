@@ -7,10 +7,10 @@
 <p><!--Through the leadership of Joan Wendell, the Minister of Music, we-->We seek to share the love of Jesus by offering a variety of ways in which members and participants can share their gifts and talents in the praise and worship ministry of our Lord.</p>
 
 <div class="ministries">
-    <div>
+    <!--<div>
         <h2>Children's Choir</h2>
         <p>Kindergarten through 5th grade</p>
-    </div>
+    </div>-->
     <div>
         <h2>Chancel Choir</h2>
         <p>This is our adult choir singing traditional and contemporary hymns and Christian songs as well as providing a Christmas cantata a Lent/Easter Cantata, and participating in the spring concert.</p>
@@ -25,7 +25,7 @@
     </div>
     <div>
         <h2>Special Music</h2>
-        <p>Recently we have had the privilege of hosting <!--the Men of Grace, from Grace Centers of Hope in Pontiac, Twice Adopted, a family with 10 adopted singing children from Branson, Missouri as well as --> solo and duet voice and instrumentals comprised of our own members, friends and staff.</p>
+        <p>Frequently we have the privilege of hosting solo and duet voice and instrumentals comprised of our own members, friends and staff.</p>
     </div>
 </div>
 
