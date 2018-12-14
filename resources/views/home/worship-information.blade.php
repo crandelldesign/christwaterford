@@ -18,13 +18,13 @@
         </a>
     </div>
     <div class="col-sm-4 thumb">
-        <a class="thumbnail thumbnail-popup" href="{{url('/img/worship-information2.jpg')}}">
-            <img class="img-responsive center-block" alt="Worship Information 2" src="{{url('/img/worship-information2.jpg')}}">
+        <a class="thumbnail thumbnail-popup" href="{{url('/img/worship-info-pastor-peggy-1.jpg')}}">
+            <img class="img-responsive center-block" alt="Worship Information 2" src="{{url('/img/worship-info-pastor-peggy-1.jpg')}}">
         </a>
     </div>
     <div class="col-sm-4 thumb">
-        <a class="thumbnail thumbnail-popup" href="{{url('/img/worship-information3.jpg')}}">
-            <img class="img-responsive center-block" alt="Worship Information 3" src="{{url('/img/worship-information3.jpg')}}">
+        <a class="thumbnail thumbnail-popup" href="{{url('/img/worship-info-pastor-peggy-2.jpg')}}">
+            <img class="img-responsive center-block" alt="Worship Information 3" src="{{url('/img/worship-info-pastor-peggy-2.jpg')}}">
         </a>
     </div>
 </div>

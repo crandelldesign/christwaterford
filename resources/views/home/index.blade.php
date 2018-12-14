@@ -16,8 +16,8 @@
 <div class="slideshow">
     <div class="item"><img srcset="{{url('/img/slideshow/slideshow1@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow1.jpg')}}" alt="Christ Lutheran Church Congregation" class="img-responsive center-block"></div>
     <div class="item"><img srcset="{{url('/img/slideshow/slideshow2@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow2.jpg')}}" alt="Christ Lutheran Church Choir" class="img-responsive center-block"></div>
-    <div class="item"><img srcset="{{url('/img/slideshow/slideshow3@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow3.jpg')}}" alt="Pastor John Negele" class="img-responsive center-block"></div>
-    <div class="item"><img srcset="{{url('/img/slideshow/slideshow4@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow4.jpg')}}" alt="Pastor John Negele Teaching Children" class="img-responsive center-block"></div>
+    <!--div class="item"><img srcset="{{url('/img/slideshow/slideshow3@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow3.jpg')}}" alt="Pastor John Negele" class="img-responsive center-block"></div>
+    <div class="item"><img srcset="{{url('/img/slideshow/slideshow4@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow4.jpg')}}" alt="Pastor John Negele Teaching Children" class="img-responsive center-block"></div>-->
     <div class="item"><img srcset="{{url('/img/slideshow/slideshow5@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow5.jpg')}}" alt="Christ Lutheran Church of Waterford" class="img-responsive center-block"></div>
     <div class="item"><img src="{{url('/img/slideshow/slideshow6.jpg')}}" alt="Front Sign of Christ Lutheran Church of Waterford " class="img-responsive center-block"></div>
     <div class="item"><img src="{{url('/img/slideshow/slideshow7.jpg')}}" alt="Christ Lutheran Church of Waterford Choir" class="img-responsive center-block"></div>
