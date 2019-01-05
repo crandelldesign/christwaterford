@@ -11,7 +11,7 @@
         <div itemscope itemtype="http://schema.org/Event">
             <h2 itemprop="name">Lutheran Worship <span itemprop="startDate" content="2019-01-06">1-6-19</span></h2>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" id="ls_embed_1545143212" src="https://livestream.com/accounts/8727672/events/8496932/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"  width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
+                <iframe class="embed-responsive-item" id="ls_embed_1546434506" src="https://livestream.com/accounts/8727672/events/8511329/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"  width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
             </div>
         </div>
         
