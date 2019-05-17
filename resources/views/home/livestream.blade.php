@@ -9,6 +9,13 @@
         <p>See our worship services live right here! You can also view recent past services in case you missed them.</p>
 
         <div itemscope itemtype="http://schema.org/Event">
+            <h2 itemprop="name">Lutheran Worship <span itemprop="startDate" content="2019-05-19">5-19-19</span></h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" id="ls_embed_1558055536" src="https://livestream.com/accounts/8727672/events/8684846/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
+            </div>
+        </div>
+        
+        <div itemscope itemtype="http://schema.org/Event">
             <h2 itemprop="name">Lutheran Worship <span itemprop="startDate" content="2019-05-12">5-12-19</span></h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" id="ls_embed_1557247555" src="https://livestream.com/accounts/8727672/events/8673100/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
@@ -33,13 +40,6 @@
             <h2 itemprop="name">Lutheran Worship <span itemprop="startDate" content="2019-04-07">4-7-19</span></h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" id="ls_embed_1554215572" src="https://livestream.com/accounts/8727672/events/8624784/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
-            </div>
-        </div>
-        
-        <div itemscope itemtype="http://schema.org/Event">
-            <h2 itemprop="name">Lutheran Worship <span itemprop="startDate" content="2019-03-31">3-31-19</span></h2>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" id="ls_embed_1553464885" src="https://livestream.com/accounts/8727672/events/8614152/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
             </div>
         </div>
 
