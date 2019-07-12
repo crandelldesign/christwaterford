@@ -7,8 +7,8 @@
 @section('content')
 
 <h1>What makes a church special?</h1>
-@if (strtotime('NOW') < strtotime('2018-08-12'))
-<h2><a href="{{url('/vacation-bible-school')}}">Click Here to Register for Vacation Bible School</a></h2>
+@if (strtotime('NOW') < strtotime('2019-08-04'))
+<p class="text-center"><a href="{{url('/vacation-bible-school')}}" class="btn btn-lg btn-blue">Click Here to Register for Vacation Bible School</a></p>
 @else
 <h2>It's people like you!</h2>
 @endif
