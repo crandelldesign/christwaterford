@@ -8,7 +8,10 @@
 
 <h1>What makes a church special?</h1>
 @if (strtotime('NOW') < strtotime('2019-08-04'))
-<p class="text-center"><a href="{{url('/vacation-bible-school')}}" class="btn btn-lg btn-blue">Click Here to Register for Vacation Bible School</a></p>
+<!--<p class="text-center"><a href="{{url('/vacation-bible-school')}}" class="btn btn-lg btn-blue">Click Here to Register for Vacation Bible School</a></p>-->
+<div class="alert alert-warning text-center">
+    Vacation Bible School has been canceled. We apologize for the late notice.
+</div>
 @else
 <h2>It's people like you!</h2>
 @endif
