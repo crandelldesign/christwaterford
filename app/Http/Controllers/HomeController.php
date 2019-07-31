@@ -27,6 +27,7 @@ class HomeController extends Controller
         $view->events = CalendarEvent::where('starts_at','>=',date('Y-m-d H:i:s', $date))
             ->where('starts_at','<',date('Y-m-d H:i:s', $datelimit))
             ->where('is_featured','=',1)
+            ->where('is_active','=',1)
             ->orderBy('starts_at')
             ->take(10)
             ->get();
@@ -119,6 +120,7 @@ class HomeController extends Controller
 
         $events = CalendarEvent::where('starts_at','>=',date('Y-m-d H:i:s', $first_day_of_the_month))
                 ->where('starts_at','<',date('Y-m-d H:i:s', $next_month))
+                ->where('is_active','=',1)
                 ->orderBy('is_all_day','desc')
                 ->orderBy('starts_at')
                 ->get();
@@ -151,6 +153,7 @@ class HomeController extends Controller
                 $tomorrow = strtotime('+1 day', $phpdate);
                 $events = CalendarEvent::where('starts_at','>=',date("Y-m-d H:i:s", $phpdate))
                     ->where('starts_at','<',date("Y-m-d H:i:s", $tomorrow))
+                    ->where('is_active','=',1)
                     ->orderBy('is_all_day','desc')
                     ->orderBy('starts_at')
                     ->get();
